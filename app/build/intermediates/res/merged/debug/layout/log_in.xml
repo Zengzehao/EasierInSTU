@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/touxiang"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/user_Name"
+        android:hint="用户名（如14××××）" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/password"
+        android:hint="密码"
+        android:layout_below="@+id/user_Name"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="登  录"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/login"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="忘记密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toStartOf="@+id/logo"
+        android:layout_marginTop="18dp"
+        android:id="@+id/forget_password"
+        tools:textColor="@color/red"
+        tools:textColorLink="@color/red" />
+
+    <TextView
+        android:text="用户注册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/forget_password"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:id="@+id/user_register"
+        tools:textColor="@color/red"
+        android:layout_alignTop="@+id/forget_password" />
+</RelativeLayout>
