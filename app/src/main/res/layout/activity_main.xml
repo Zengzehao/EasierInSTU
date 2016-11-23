@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--
     <RelativeLayout
         android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
@@ -50,7 +51,7 @@
             android:id="@+id/imageView" />
 
     </RelativeLayout>
-
+    -->
 
     <RadioGroup
         android:id="@+id/rg_tab_bar"
@@ -97,8 +98,7 @@
         android:id="@+id/vpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/div_tab_bar"
-        android:layout_below="@id/ly_top_bar" />
+        android:layout_above="@id/div_tab_bar" />
 
 
 </RelativeLayout>

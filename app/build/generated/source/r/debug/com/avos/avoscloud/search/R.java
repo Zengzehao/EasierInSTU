@@ -15,13 +15,13 @@ public final class R {
 		public static final int avoscloud_search_result_open_background = 0x7f020059;
 	}
 	public static final class id {
-		public static final int avoscloud_search_actionbar_back = 0x7f0b006b;
-		public static final int avoscloud_search_actionbar_title = 0x7f0b006c;
-		public static final int avoscloud_search_emtpy_result = 0x7f0b006e;
-		public static final int avoscloud_search_result_description = 0x7f0b0070;
-		public static final int avoscloud_search_result_listview = 0x7f0b006d;
-		public static final int avoscloud_search_result_open_app = 0x7f0b0071;
-		public static final int avoscloud_search_result_title = 0x7f0b006f;
+		public static final int avoscloud_search_actionbar_back = 0x7f0b0067;
+		public static final int avoscloud_search_actionbar_title = 0x7f0b0068;
+		public static final int avoscloud_search_emtpy_result = 0x7f0b006a;
+		public static final int avoscloud_search_result_description = 0x7f0b006c;
+		public static final int avoscloud_search_result_listview = 0x7f0b0069;
+		public static final int avoscloud_search_result_open_app = 0x7f0b006d;
+		public static final int avoscloud_search_result_title = 0x7f0b006b;
 	}
 	public static final class layout {
 		public static final int avoscloud_search_actionbar = 0x7f04001f;

@@ -2,12 +2,10 @@ package com.example.zengzehao.messageshare;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,10 +20,10 @@ public class MyFragment2 extends Fragment {
 
     private ListView listView;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.main_fragment , container, false);
-        listView = (ListView)view.findViewById(R.id.listview);
+        View view= inflater.inflate(R.layout.tab02, container, false);
+        listView = (ListView)view.findViewById(R.id.tab02_listview);
         List<Map<String, Object>> list=getData();
-        listView.setAdapter(new ListViewAdapter(getActivity(), list));
+        listView.setAdapter(new Tab02ListViewAdapter(getActivity(), list));
         return view;
     }
 
