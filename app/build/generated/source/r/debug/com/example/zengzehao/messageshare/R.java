@@ -1828,8 +1828,8 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f02005f;
         public static final int notification_bg_normal_pressed=0x7f020060;
         public static final int notification_icon_background=0x7f020061;
-        public static final int notification_template_icon_bg=0x7f02006f;
-        public static final int notification_template_icon_low_bg=0x7f020070;
+        public static final int notification_template_icon_bg=0x7f020070;
+        public static final int notification_template_icon_low_bg=0x7f020071;
         public static final int notification_tile_bg=0x7f020062;
         public static final int notify_panel_notification_icon_bg=0x7f020063;
         public static final int person=0x7f020064;
@@ -1840,9 +1840,10 @@ containing a value of this type.
         public static final int tab_menu_setting=0x7f020069;
         public static final int tab_menu_text=0x7f02006a;
         public static final int title_bar=0x7f02006b;
-        public static final int top_add=0x7f02006c;
-        public static final int top_search=0x7f02006d;
-        public static final int touxiang=0x7f02006e;
+        public static final int title_bar2=0x7f02006c;
+        public static final int top_add=0x7f02006d;
+        public static final int top_search=0x7f02006e;
+        public static final int touxiang=0x7f02006f;
     }
     public static final class id {
         public static final int action0=0x7f0b007e;
@@ -1862,7 +1863,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0b0042;
         public static final int action_mode_bar_stub=0x7f0b0041;
         public static final int action_mode_close_button=0x7f0b0026;
-        public static final int action_settings=0x7f0b009e;
+        public static final int action_settings=0x7f0b00ad;
         public static final int action_text=0x7f0b007d;
         public static final int actions=0x7f0b008b;
         public static final int activity_chooser_view_content=0x7f0b0027;
@@ -1979,6 +1980,21 @@ containing a value of this type.
         public static final int submenuarrow=0x7f0b003f;
         public static final int submit_area=0x7f0b0050;
         public static final int tab02_listview=0x7f0b009a;
+        public static final int tab04_listview=0x7f0b009c;
+        public static final int tab04_listview_button=0x7f0b00a8;
+        public static final int tab04_listview_clicks=0x7f0b00a6;
+        public static final int tab04_listview_clicks_display=0x7f0b00a7;
+        public static final int tab04_listview_endplace=0x7f0b00a3;
+        public static final int tab04_listview_endplace_dispaly=0x7f0b00aa;
+        public static final int tab04_listview_need=0x7f0b00a4;
+        public static final int tab04_listview_need_display=0x7f0b00a5;
+        public static final int tab04_listview_portrait=0x7f0b009d;
+        public static final int tab04_listview_startplace=0x7f0b00a2;
+        public static final int tab04_listview_startplace_display=0x7f0b00a9;
+        public static final int tab04_listview_starttime=0x7f0b00a0;
+        public static final int tab04_listview_starttime_display=0x7f0b00a1;
+        public static final int tab04_listview_time=0x7f0b009f;
+        public static final int tab04_listview_username=0x7f0b009e;
         public static final int tabMode=0x7f0b000b;
         public static final int text=0x7f0b0090;
         public static final int text2=0x7f0b008e;
@@ -1992,8 +2008,8 @@ containing a value of this type.
         public static final int title_template=0x7f0b0032;
         public static final int top=0x7f0b0023;
         public static final int topPanel=0x7f0b0031;
-        public static final int top_add=0x7f0b009c;
-        public static final int top_search=0x7f0b009d;
+        public static final int top_add=0x7f0b00ab;
+        public static final int top_search=0x7f0b00ac;
         public static final int txt_content=0x7f0b006f;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
@@ -2075,7 +2091,9 @@ containing a value of this type.
         public static final int tab01=0x7f04003c;
         public static final int tab02=0x7f04003d;
         public static final int tab02_listview=0x7f04003e;
-        public static final int top_layout=0x7f04003f;
+        public static final int tab04=0x7f04003f;
+        public static final int tab04_listview=0x7f040040;
+        public static final int top_layout=0x7f040041;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
