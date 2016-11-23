@@ -1,6 +1,38 @@
 [
     {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_channel_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_message_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_message_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_message_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_message_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_better_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_better_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_channel_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png"
+    },
+    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_my_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_my_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_better_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/tab_my_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_my_normal.png"
     }
 ]

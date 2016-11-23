@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">MessageShare</string>
+    <string name="app_name">EasierInSTU</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="tab_menu_alert">二手交易</string>
+    <string name="tab_menu_profile">兼职交流</string>
+    <string name="tab_menu_pay">快递帮拿</string>
+    <string name="tab_menu_setting">我要拼车</string>
+
+
 </resources>

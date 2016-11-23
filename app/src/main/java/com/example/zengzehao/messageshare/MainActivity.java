@@ -1,73 +1,107 @@
 package com.example.zengzehao.messageshare;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.avos.avoscloud.AVException;
-import com.avos.avoscloud.AVOSCloud;
-import com.avos.avoscloud.AVObject;
-import com.avos.avoscloud.GetCallback;
-import com.avos.avoscloud.SaveCallback;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
+/**
+ * Created by Coder-pig on 2015/8/28 0028.
+ */
+public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener,
+        ViewPager.OnPageChangeListener {
 
-public class MainActivity extends AppCompatActivity {
-    TextView textView;
+    //UI Objects
+    private TextView txt_topbar;
+    private RadioGroup rg_tab_bar;
+    private RadioButton rb_channel;
+    private RadioButton rb_message;
+    private RadioButton rb_better;
+    private RadioButton rb_setting;
+    private ViewPager vpager;
+
+    private MyFragmentPagerAdapter mAdapter;
+
+    //几个代表页面的常量
+    public static final int PAGE_ONE = 0;
+    public static final int PAGE_TWO = 1;
+    public static final int PAGE_THREE = 2;
+    public static final int PAGE_FOUR = 3;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AVOSCloud.initialize(this,"6TTLB0Sd6E8EeuwR3uslREsz-gzGzoHsz","zYP2M2Bd9bXR4RzUMKgHgPwz");
-       /* AVObject testObject = new AVObject("TestObject");
-        testObject.put("words","Hello World!");
-        testObject.put("name","testObject");
-        testObject.put("num",001);
-        testObject.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(AVException e) {
-                if(e == null){
-                    Log.d("saved","success!");
-                }
+        mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+        bindViews();
+        rb_channel.setChecked(true);
+    }
+
+    private void bindViews() {
+        txt_topbar = (TextView) findViewById(R.id.txt_topbar);
+        rg_tab_bar = (RadioGroup) findViewById(R.id.rg_tab_bar);
+        rb_channel = (RadioButton) findViewById(R.id.rb_channel);
+        rb_message = (RadioButton) findViewById(R.id.rb_message);
+        rb_better = (RadioButton) findViewById(R.id.rb_better);
+        rb_setting = (RadioButton) findViewById(R.id.rb_setting);
+        rg_tab_bar.setOnCheckedChangeListener(this);
+
+        vpager = (ViewPager) findViewById(R.id.vpager);
+        vpager.setAdapter(mAdapter);
+        vpager.setCurrentItem(0);
+        vpager.addOnPageChangeListener(this);
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        switch (checkedId) {
+            case R.id.rb_channel:
+                vpager.setCurrentItem(PAGE_ONE);
+                break;
+            case R.id.rb_message:
+                vpager.setCurrentItem(PAGE_TWO);
+                break;
+            case R.id.rb_better:
+                vpager.setCurrentItem(PAGE_THREE);
+                break;
+            case R.id.rb_setting:
+                vpager.setCurrentItem(PAGE_FOUR);
+                break;
+        }
+    }
+
+
+    //重写ViewPager页面切换的处理方法
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+        //state的状态有三个，0表示什么都没做，1正在滑动，2滑动完毕
+        if (state == 2) {
+            switch (vpager.getCurrentItem()) {
+                case PAGE_ONE:
+                    rb_channel.setChecked(true);
+                    break;
+                case PAGE_TWO:
+                    rb_message.setChecked(true);
+                    break;
+                case PAGE_THREE:
+                    rb_better.setChecked(true);
+                    break;
+                case PAGE_FOUR:
+                    rb_setting.setChecked(true);
+                    break;
             }
-        });
-
-        boolean bool = true;
-        int number = 2015;
-        String string = number + " 年度音乐排行";
-        Date date = new Date();
-
-        byte[] data = "短篇小说".getBytes();
-        ArrayList<Object> arrayList = new ArrayList<>();
-        arrayList.add(number);
-        arrayList.add(string);
-        HashMap<Object, Object> hashMap = new HashMap<>();
-        hashMap.put("数字", number);
-        hashMap.put("字符串", string);
-
-        AVObject object = new AVObject("DataTypes");
-        object.put("testBoolean", bool);
-        object.put("testInteger", number);
-        object.put("testDate", date);
-        object.put("testData", data);
-        object.put("testArrayList", arrayList);
-        object.put("testHashMap", hashMap);
-        object.saveInBackground();
-        */
-
-       // String name;
-       // String words;
-        AVObject testObject = AVObject.createWithoutData("TestObject","5829d217a22b9d006975c257");
-
-        testObject.put("num",2);
-        testObject.put("name","namechange");
-        testObject.saveInBackground();
-
-        
+        }
     }
 }
