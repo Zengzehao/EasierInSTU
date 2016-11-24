@@ -38,6 +38,7 @@ public class Login extends AppCompatActivity {
         AVOSCloud.initialize(this,"6TTLB0Sd6E8EeuwR3uslREsz-gzGzoHsz","zYP2M2Bd9bXR4RzUMKgHgPwz");
         initComponents();
 
+
         //为登录按钮注册监听
         login.setOnClickListener(new View.OnClickListener() {
             @Override

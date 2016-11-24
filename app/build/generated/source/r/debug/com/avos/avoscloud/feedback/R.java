@@ -8,13 +8,13 @@ package com.avos.avoscloud.feedback;
 
 public final class R {
 	public static final class color {
-		public static final int avoscloud_feedback_back_background = 0x7f0a0008;
-		public static final int avoscloud_feedback_input_wrap_background = 0x7f0a0009;
-		public static final int avoscloud_feedback_text_gray = 0x7f0a000a;
-		public static final int avoscloud_feedback_thread_actionbar_blue = 0x7f0a000b;
-		public static final int avoscloud_feedback_thread_header_background = 0x7f0a000c;
-		public static final int avoscloud_feedback_white = 0x7f0a000d;
-		public static final int avoscloud_timestamp_gray = 0x7f0a000e;
+		public static final int avoscloud_feedback_back_background = 0x7f0b0008;
+		public static final int avoscloud_feedback_input_wrap_background = 0x7f0b0009;
+		public static final int avoscloud_feedback_text_gray = 0x7f0b000a;
+		public static final int avoscloud_feedback_thread_actionbar_blue = 0x7f0b000b;
+		public static final int avoscloud_feedback_thread_header_background = 0x7f0b000c;
+		public static final int avoscloud_feedback_white = 0x7f0b000d;
+		public static final int avoscloud_timestamp_gray = 0x7f0b000e;
 	}
 	public static final class drawable {
 		public static final int avoscloud_feedback_actionbar_background = 0x7f020053;
@@ -24,18 +24,18 @@ public final class R {
 		public static final int avoscloud_feedback_user_reply_background = 0x7f020057;
 	}
 	public static final class id {
-		public static final int avoscloud_feedback_actionbar_back = 0x7f0b0065;
-		public static final int avoscloud_feedback_actionbar_title = 0x7f0b0066;
-		public static final int avoscloud_feedback_add_image = 0x7f0b005d;
-		public static final int avoscloud_feedback_contact = 0x7f0b0060;
-		public static final int avoscloud_feedback_content = 0x7f0b0062;
-		public static final int avoscloud_feedback_functional_wrap = 0x7f0b005c;
-		public static final int avoscloud_feedback_image = 0x7f0b0063;
-		public static final int avoscloud_feedback_input = 0x7f0b005f;
-		public static final int avoscloud_feedback_input_wrapper = 0x7f0b005b;
-		public static final int avoscloud_feedback_send = 0x7f0b005e;
-		public static final int avoscloud_feedback_thread_list = 0x7f0b0061;
-		public static final int avoscloud_feedback_timestamp = 0x7f0b0064;
+		public static final int avoscloud_feedback_actionbar_back = 0x7f0c0084;
+		public static final int avoscloud_feedback_actionbar_title = 0x7f0c0085;
+		public static final int avoscloud_feedback_add_image = 0x7f0c007c;
+		public static final int avoscloud_feedback_contact = 0x7f0c007f;
+		public static final int avoscloud_feedback_content = 0x7f0c0081;
+		public static final int avoscloud_feedback_functional_wrap = 0x7f0c007b;
+		public static final int avoscloud_feedback_image = 0x7f0c0082;
+		public static final int avoscloud_feedback_input = 0x7f0c007e;
+		public static final int avoscloud_feedback_input_wrapper = 0x7f0c007a;
+		public static final int avoscloud_feedback_send = 0x7f0c007d;
+		public static final int avoscloud_feedback_thread_list = 0x7f0c0080;
+		public static final int avoscloud_feedback_timestamp = 0x7f0c0083;
 	}
 	public static final class layout {
 		public static final int avoscloud_feedback_activity_conversation = 0x7f04001b;
@@ -46,7 +46,7 @@ public final class R {
 	public static final class raw {
 	}
 	public static final class string {
-		public static final int avoscloud_feedback_app_name = 0x7f06002d;
+		public static final int avoscloud_feedback_app_name = 0x7f06002e;
 		public static final int avoscloud_feedback_contact_hint = 0x7f060015;
 		public static final int avoscloud_feedback_input_hint = 0x7f060016;
 		public static final int avoscloud_feedback_just_now = 0x7f060017;
