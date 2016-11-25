@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-42:12
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/Andro
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:8:22-73
 application
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:9:5-40:19
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:9:5-43:19
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -207,6 +207,10 @@ activity#com.example.zengzehao.messageshare.ChangeNicknameActiviy
 ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:37:9-39:20
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:37:19-56
+activity#com.example.zengzehao.messageshare.WorkAddActivity
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:40:9-42:20
+	android:name
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:40:19-50
 uses-sdk
 INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/AndroidManifest.xml:21:5-23:78

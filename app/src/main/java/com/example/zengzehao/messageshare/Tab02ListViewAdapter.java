@@ -34,10 +34,13 @@ public class Tab02ListViewAdapter extends BaseAdapter {
      * @author Administrator
      */
     public final class Zujian {
-        public ImageView image;
-        public TextView title;
-        public Button view;
-        public TextView info;
+        public ImageView portrait;
+        public TextView username;
+        public TextView time;
+        public TextView price;
+        public TextView type;
+        public TextView description;
+        public Button button;
     }
 
     @Override
@@ -68,18 +71,26 @@ public class Tab02ListViewAdapter extends BaseAdapter {
             zujian = new Zujian();
             //获得组件，实例化组件
             convertView = layoutInflater.inflate(R.layout.tab02_listview, null);
-            zujian.image = (ImageView) convertView.findViewById(R.id.image);
-            zujian.title = (TextView) convertView.findViewById(R.id.title);
-            zujian.view = (Button) convertView.findViewById(R.id.view);
-            zujian.info = (TextView) convertView.findViewById(R.id.info);
+            zujian.portrait = (ImageView) convertView.findViewById(R.id.tab02_listview_portrait);
+            zujian.username = (TextView) convertView.findViewById(R.id.tab02_listview_username);
+            zujian.time = (TextView) convertView.findViewById(R.id.tab02_listview_time);
+            zujian.price = (TextView) convertView.findViewById(R.id.tab02_listview_price);
+            zujian.type = (TextView) convertView.findViewById(R.id.tab02_listview_type);
+            zujian.description = (TextView) convertView.findViewById(R.id.tab02_listview_description);
+            zujian.button = (Button) convertView.findViewById(R.id.tab02_listview_button);
             convertView.setTag(zujian);
         } else {
             zujian = (Zujian) convertView.getTag();
         }
         //绑定数据
-        zujian.image.setBackgroundResource((Integer) data.get(position).get("image"));
-        zujian.title.setText((String) data.get(position).get("title"));
-        zujian.info.setText((String) data.get(position).get("info"));
+
+        zujian.portrait.setBackgroundResource((Integer)data.get(position).get("portrait"));
+        zujian.username.setText((String)data.get(position).get("username"));
+        zujian.time.setText((String)data.get(position).get("time"));
+        zujian.price.setText((String) data.get(position).get("price"));
+        zujian.type.setText((String)data.get(position).get("type"));
+        zujian.description.setText((String)data.get(position).get("description"));
+
         return convertView;
     }
 }

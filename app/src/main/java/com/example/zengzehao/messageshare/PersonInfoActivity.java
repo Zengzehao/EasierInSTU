@@ -26,9 +26,12 @@ import java.io.FileOutputStream;
  */
 
 public class PersonInfoActivity extends AppCompatActivity {
+    TextView cancel;
+
     ImageView portrait;
     ImageView change_portrait;
     ImageView change_nickname;
+
 
     TextView username;
     TextView email;
@@ -46,6 +49,8 @@ public class PersonInfoActivity extends AppCompatActivity {
         setContentView(R.layout.person_layout);
         AVOSCloud.initialize(this,"6TTLB0Sd6E8EeuwR3uslREsz-gzGzoHsz","zYP2M2Bd9bXR4RzUMKgHgPwz");
 
+        cancel = (TextView) findViewById(R.id.personinfo_cancel);
+
         portrait = (ImageView) findViewById(R.id.portrait);
         change_portrait = (ImageView) findViewById(R.id.change_portrait);
         change_nickname = (ImageView) findViewById(R.id.change_personinfo_nackname);
@@ -57,6 +62,13 @@ public class PersonInfoActivity extends AppCompatActivity {
         logout = (Button) findViewById(R.id.logout);
 
         updatePersinInfo();
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PersonInfoActivity.this.finish();
+            }
+        });
 
         change_nickname.setOnClickListener(new View.OnClickListener() {
             @Override

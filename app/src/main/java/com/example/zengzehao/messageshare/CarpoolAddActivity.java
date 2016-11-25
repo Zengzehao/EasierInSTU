@@ -47,7 +47,7 @@ public class CarpoolAddActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                CarpoolAddActivity.this.finish();
             }
         });
 

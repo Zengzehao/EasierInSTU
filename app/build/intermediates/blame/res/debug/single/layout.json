@@ -232,6 +232,10 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.2/res/layout/avoscloud_search_actionbar.xml"
     },
     {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/work_add_layout.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/work_add_layout.xml"
+    },
+    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_screen_simple.xml"
     },
@@ -318,6 +322,10 @@
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/note_item.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/note_item.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/work_add_top_layout.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/work_add_top_layout.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
