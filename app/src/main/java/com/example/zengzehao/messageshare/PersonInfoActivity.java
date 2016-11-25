@@ -93,9 +93,12 @@ public class PersonInfoActivity extends AppCompatActivity {
         username.setText(AVUser.getCurrentUser().getUsername());
         email.setText(AVUser.getCurrentUser().getEmail());
         nickname.setText(AVUser.getCurrentUser().get("nickName").toString());
-        System.out.println(AVUser.getCurrentUser().getAVFile("image").getUrl());
+        if(AVUser.getCurrentUser().getAVFile("image") != null){
+            Picasso.with(PersonInfoActivity.this).load(AVUser.getCurrentUser().getAVFile("image") == null ? "www" : AVUser.getCurrentUser().getAVFile("image").getUrl()).into(portrait);
+        }
+      //  System.out.println(AVUser.getCurrentUser().getAVFile("image").getUrl());
 
-        Picasso.with(PersonInfoActivity.this).load(AVUser.getCurrentUser().getAVFile("image") == null ? "www" : AVUser.getCurrentUser().getAVFile("image").getUrl()).into(portrait);
+
 
 
 

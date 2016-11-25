@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="20dp">
+        android:paddingBottom="5dp">
 
         <ImageView
             android:layout_width="60dp"
@@ -88,6 +88,16 @@
             android:id="@+id/tab02_listview_description"
             tools:text="在金平区，高三，数学和物理，每个星期两天，每天两小时，最好是男生"
             tools:textColor="@color/avoscloud_feedback_thread_header_background" />
+
+        <TextView
+            android:text="13411984877"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab02_listview_description"
+            android:visibility="invisible"
+            android:layout_alignLeft="@+id/tab02_listview_type"
+
+            android:id="@+id/tab02_listview_contact" />
     </RelativeLayout>
 
     <RelativeLayout

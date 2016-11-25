@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 import java.util.Map;
@@ -28,6 +29,9 @@ public class Tab02ListViewAdapter extends BaseAdapter {
         this.layoutInflater = LayoutInflater.from(context);
     }
 
+
+
+
     /**
      * 组件集合，对应list.xml中的控件
      *
@@ -40,6 +44,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
         public TextView price;
         public TextView type;
         public TextView description;
+        public TextView contact;
         public Button button;
     }
 
@@ -77,6 +82,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
             zujian.price = (TextView) convertView.findViewById(R.id.tab02_listview_price);
             zujian.type = (TextView) convertView.findViewById(R.id.tab02_listview_type);
             zujian.description = (TextView) convertView.findViewById(R.id.tab02_listview_description);
+            zujian.contact = (TextView) convertView.findViewById(R.id.tab02_listview_contact);
             zujian.button = (Button) convertView.findViewById(R.id.tab02_listview_button);
             convertView.setTag(zujian);
         } else {
@@ -86,11 +92,28 @@ public class Tab02ListViewAdapter extends BaseAdapter {
 
         zujian.portrait.setBackgroundResource((Integer)data.get(position).get("portrait"));
         zujian.username.setText((String)data.get(position).get("username"));
-        zujian.time.setText((String)data.get(position).get("time"));
+//        zujian.time.setText((String)data.get(position).get("time"));
         zujian.price.setText((String) data.get(position).get("price"));
         zujian.type.setText((String)data.get(position).get("type"));
         zujian.description.setText((String)data.get(position).get("description"));
+        zujian.contact.setText((String)data.get(position).get("contact"));
+
+        zujian.button.setOnClickListener(new MyClickListner());
+
+
 
         return convertView;
     }
+    class MyClickListner implements View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+            View view1 = layoutInflater.inflate(R.layout.tab02_listview,null);
+            TextView contact = (TextView) view1.findViewById(R.id.tab02_listview_contact);
+            String contact_string = contact.getText().toString();
+            System.out.println("联系方式"+contact_string);
+            Toast.makeText(context,"联系方式"+contact_string,Toast.LENGTH_SHORT).show();
+        }
+    }
+
 }

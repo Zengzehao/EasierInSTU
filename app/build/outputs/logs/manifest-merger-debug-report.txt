@@ -19,12 +19,12 @@ ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/Andro
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:4:22-78
 uses-permission#android.permission.INTERNET
 ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:5:5-66
-MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:11:5-67
+MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:6:5-79
-MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:14:5-79
+MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:14:5-79
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.READ_PHONE_STATE
@@ -75,7 +75,7 @@ MERGED from [com.android.support:support-core-ui:25.0.0] /home/zengzehao/Android
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
-MERGED from [cn.leancloud.android:avoscloud-search:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.2/AndroidManifest.xml:11:5-14:19
+MERGED from [cn.leancloud.android:avoscloud-search:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.3/AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support:design:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -235,7 +235,7 @@ MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidS
 MERGED from [com.android.support:animated-vector-drawable:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
-MERGED from [cn.leancloud.android:avoscloud-push:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.15.2/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-push:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.15.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:21:5-23:63
@@ -252,9 +252,9 @@ MERGED from [com.android.support:support-core-ui:25.0.0] /home/zengzehao/Android
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
-MERGED from [cn.leancloud.android:avoscloud-feedback:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.15.2/AndroidManifest.xml:7:5-9:41
-MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:7:5-9:41
-MERGED from [cn.leancloud.android:avoscloud-search:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.2/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-feedback:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.15.3/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:7:5-9:41
+MERGED from [cn.leancloud.android:avoscloud-search:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:21:5-23:58
@@ -349,14 +349,14 @@ MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidS
 		INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml
 		INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:12:5-81
+ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:12:22-78
+		ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:12:22-78
 uses-permission#android.permission.VIBRATE
-ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:13:5-66
+ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:13:5-66
 	android:name
-		ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.2/AndroidManifest.xml:13:22-63
+		ADDED from [cn.leancloud.android:avoscloud-sns:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.15.3/AndroidManifest.xml:13:22-63
 activity#com.avos.avoscloud.search.SearchActivity
-ADDED from [cn.leancloud.android:avoscloud-search:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.2/AndroidManifest.xml:12:9-13:20
+ADDED from [cn.leancloud.android:avoscloud-search:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.3/AndroidManifest.xml:12:9-13:20
 	android:name
-		ADDED from [cn.leancloud.android:avoscloud-search:v3.15.2] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.2/AndroidManifest.xml:12:19-74
+		ADDED from [cn.leancloud.android:avoscloud-search:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.3/AndroidManifest.xml:12:19-74

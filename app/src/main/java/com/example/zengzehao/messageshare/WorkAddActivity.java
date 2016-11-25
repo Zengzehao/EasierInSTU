@@ -1,5 +1,6 @@
 package com.example.zengzehao.messageshare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -8,12 +9,18 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.avos.avoscloud.AVCloudQueryResult;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVFile;
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.AVUser;
+import com.avos.avoscloud.CloudQueryCallback;
+import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.SaveCallback;
+
+import java.util.List;
 
 /**
  * Created by zengzehao on 16-11-25.
@@ -59,7 +66,7 @@ public class WorkAddActivity extends AppCompatActivity {
                 job.put("description",description_content);
                 job.put("contactInfo",contanct_content);
 
-                job.put("userName", AVUser.getCurrentUser());
+                job.put("userName", AVUser.getCurrentUser().getUsername());
                 //carpool.put("userPortrait",new AVFile());
                 job.saveInBackground(new SaveCallback() {
                     @Override
@@ -67,11 +74,17 @@ public class WorkAddActivity extends AppCompatActivity {
                         if(e == null){
                             Toast.makeText(WorkAddActivity.this,"发布成功",Toast.LENGTH_SHORT).show();
                             WorkAddActivity.this.finish();
+                            //Intent intent = new Intent(WorkAddActivity.this,MyFragment2.class);
+                            //startActivity(intent);
                         }else{
                             System.out.println("发布失败");
                         }
                     }
                 });
+
+
+
+
             }
         });
     }
