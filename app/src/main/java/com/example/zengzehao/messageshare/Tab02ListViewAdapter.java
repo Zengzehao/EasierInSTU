@@ -1,6 +1,8 @@
 package com.example.zengzehao.messageshare;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -97,22 +99,52 @@ public class Tab02ListViewAdapter extends BaseAdapter {
         zujian.type.setText((String)data.get(position).get("type"));
         zujian.description.setText((String)data.get(position).get("description"));
         zujian.contact.setText((String)data.get(position).get("contact"));
-
-        zujian.button.setOnClickListener(new MyClickListner());
+        System.out.println("联系方式"+zujian.contact.getText().toString());
+        zujian.button.setOnClickListener(new MyClickListner(zujian.contact.getText().toString()));
 
 
 
         return convertView;
     }
+
+    public static void ShowMsg(String title,String msg,Context context) {
+        AlertDialog.Builder dlg = new AlertDialog.Builder(context);
+        dlg.setTitle(title);
+        dlg.setMessage(msg);
+        dlg.setPositiveButton("确定",null);
+        dlg.show();
+    }
     class MyClickListner implements View.OnClickListener{
 
+        String contact;
+        MyClickListner(String contact){
+            this.contact = contact;
+        }
         @Override
         public void onClick(View view) {
-            View view1 = layoutInflater.inflate(R.layout.tab02_listview,null);
-            TextView contact = (TextView) view1.findViewById(R.id.tab02_listview_contact);
-            String contact_string = contact.getText().toString();
-            System.out.println("联系方式"+contact_string);
-            Toast.makeText(context,"联系方式"+contact_string,Toast.LENGTH_SHORT).show();
+           // View view1 = layoutInflater.inflate(R.layout.tab02_listview,null);
+           // TextView contact = (TextView) view1.findViewById(R.id.tab02_listview_contact);
+          //  String contact_string = contact.getText().toString();
+
+            //System.out.println("联系方式"+contact);
+            /*
+            AlertDialog.Builder builder = new AlertDialog.Builder(context).setTitle("联系方式").setMessage(contact);
+                    builder.setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+
+                    builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                        }
+                    });
+            */
+            ShowMsg("联系方式",contact,context);
+            //Toast.makeText(context,"联系方式"+contact,Toast.LENGTH_SHORT).show();
         }
     }
 
