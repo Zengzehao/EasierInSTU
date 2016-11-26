@@ -94,7 +94,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
 
         zujian.portrait.setBackgroundResource((Integer)data.get(position).get("portrait"));
         zujian.username.setText((String)data.get(position).get("username"));
-//        zujian.time.setText((String)data.get(position).get("time"));
+        zujian.time.setText((String)data.get(position).get("time"));
         zujian.price.setText((String) data.get(position).get("price"));
         zujian.type.setText((String)data.get(position).get("type"));
         zujian.description.setText((String)data.get(position).get("description"));

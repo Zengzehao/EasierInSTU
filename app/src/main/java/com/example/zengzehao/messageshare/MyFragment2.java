@@ -22,11 +22,13 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.CloudQueryCallback;
 import com.avos.avoscloud.GetCallback;
+import com.example.zengzehao.messageshare.tools.ConutDate;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -80,7 +82,7 @@ public class MyFragment2 extends Fragment {
                 Toast.makeText(getActivity(),"你点击了发布按钮",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getActivity(),WorkAddActivity.class);
 
-               startActivity(intent);
+                startActivity(intent);
                 System.out.println("跳转到发布界面");
             }
         });
@@ -117,7 +119,9 @@ public class MyFragment2 extends Fragment {
 
 
                     map.put("username",results.get(i).get("userName"));
-                    map.put("time",results.get(i).get("createdAt").toString());
+                    Date date = new Date();
+                    String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));
+                    map.put("time","发布于 "+time);
                     map.put("price",results.get(i).get("price"));
                     map.put("type","类型:"+results.get(i).get("type"));
                     map.put("description",results.get(i).get("description"));
