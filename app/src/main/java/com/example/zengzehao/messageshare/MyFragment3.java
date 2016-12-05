@@ -90,13 +90,16 @@ public class MyFragment3 extends Fragment {
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "你点击了嘻嘻~", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(),AskExpressAddActivity.class);
+                startActivity(intent);
             }
         });
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "你点击了呵呵~", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "你点击了呵呵~", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(),HelpExpressAddactivity.class);
+                startActivity(intent);
                 popWindow.dismiss();
             }
         });

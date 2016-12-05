@@ -8,10 +8,10 @@ package com.avos.sns;
 
 public final class R {
 	public static final class id {
-		public static final int webview = 0x7f0d008d;
+		public static final int webview = 0x7f0d0093;
 	}
 	public static final class layout {
-		public static final int avoscloud_sns_web_activity = 0x7f040023;
+		public static final int avoscloud_sns_web_activity = 0x7f040025;
 	}
 	public static final class raw {
 	}

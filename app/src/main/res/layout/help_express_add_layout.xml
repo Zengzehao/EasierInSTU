@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/help_express_add_top_layout"
+        android:id="@+id/help_express_add_include" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/no_conner"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:id="@+id/help_express_add_description"
+        android:layout_below="@+id/help_express_add_include"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:hint="输入快递公司、快递地点、你的宿舍、快递大小等信息（注意财产安全）"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/no_conner"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/help_express_add_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/help_express_add_contact"
+        android:hint="联系方式（请在括号注明是微信号/QQ号/手机号）"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/no_conner"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/help_express_add_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/help_express_add_endtime"
+        android:hint="截止时间"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

@@ -40,6 +40,16 @@
         <activity android:name=".WorkAddActivity">
 
         </activity>
+        <activity android:name=".AskExpressAddActivity">
+
+        </activity>
+        <activity android:name=".HelpExpressAddactivity"></activity>
+        <activity android:name=".SellAddActivity">
+
+        </activity>
+        <activity android:name=".BuyAddAcivity">
+
+        </activity>
     </application>
 
 </manifest>

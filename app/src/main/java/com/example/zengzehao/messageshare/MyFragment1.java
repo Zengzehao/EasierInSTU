@@ -123,13 +123,18 @@ public class MyFragment1 extends Fragment {
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "你点击了嘻嘻~", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "你点击了嘻嘻~", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(),SellAddActivity.class);
+                startActivity(intent);
+
             }
         });
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "你点击了呵呵~", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(), "你点击了呵呵~", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(),BuyAddAcivity.class);
+                startActivity(intent);
                 popWindow.dismiss();
             }
         });
