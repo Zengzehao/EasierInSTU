@@ -59,4 +59,8 @@ dependencies {
     compile 'com.android.support:gridlayout-v7:25.0.0'
     compile 'com.android.support:recyclerview-v7:25.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'cn.carbs.android:SegmentControlView:1.0.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    //compile 'com.example.zhouwei.library:library:1.0.0'
+
 }

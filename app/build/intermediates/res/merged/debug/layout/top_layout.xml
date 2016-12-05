@@ -8,7 +8,7 @@
         android:id="@+id/top_add"
         android:layout_width="40dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/top_add2"
+        android:background="@drawable/top_add"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="5dp"

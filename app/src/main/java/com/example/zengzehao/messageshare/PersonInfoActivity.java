@@ -21,6 +21,8 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 import java.io.FileOutputStream;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by zengzehao on 16-11-24.
  */
@@ -28,7 +30,7 @@ import java.io.FileOutputStream;
 public class PersonInfoActivity extends AppCompatActivity {
     TextView cancel;
 
-    ImageView portrait;
+    CircleImageView portrait;
     ImageView change_portrait;
     ImageView change_nickname;
 
@@ -51,7 +53,7 @@ public class PersonInfoActivity extends AppCompatActivity {
 
         cancel = (TextView) findViewById(R.id.personinfo_cancel);
 
-        portrait = (ImageView) findViewById(R.id.portrait);
+        portrait = (CircleImageView) findViewById(R.id.portrait);
         change_portrait = (ImageView) findViewById(R.id.change_portrait);
         change_nickname = (ImageView) findViewById(R.id.change_personinfo_nackname);
         username = (TextView) findViewById(R.id.personinfo_username);

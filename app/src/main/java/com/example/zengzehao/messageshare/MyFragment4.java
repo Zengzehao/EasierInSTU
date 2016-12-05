@@ -1,7 +1,9 @@
 package com.example.zengzehao.messageshare;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,7 +14,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.avos.avoscloud.AVCloudQueryResult;
+import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
+import com.example.zengzehao.messageshare.tools.ConutDate;
+
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -30,7 +38,13 @@ public class MyFragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab04,container,false);
         listView = (ListView) view.findViewById(R.id.tab04_listview);
-        List<Map<String,Object>> list = getData();
+        //允许从主线程请求网络服务
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+
+        List<Map<String,Object>> list = new getData().doInBackground();
         listView.setAdapter(new Tab04ListViewAdapter(getActivity(),list));
        // txt_content.setText("第四个Fragment");
         //获取个人中心 和发布的ImageBUtton
@@ -59,6 +73,52 @@ public class MyFragment4 extends Fragment {
 
         Log.e("HEHE", "4日狗");
         return view;
+    }
+
+    public class getData extends AsyncTask<Void,Void,List<Map<String,Object>>> {
+
+
+
+
+
+        @Override
+        protected List<Map<String,Object>> doInBackground(Void...voids) {
+
+            List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
+
+            String cql = "select * from CarpoolTest";
+            try {
+                AVCloudQueryResult result = AVQuery.doCloudQuery(cql);
+                System.out.println(result);
+                List<AVObject> results = (List<AVObject>) result.getResults();
+                for (int i = results.size()-1;i>=0;i--){
+                    Map<String, Object> map=new HashMap<String, Object>();
+
+                    map.put("portrait",R.drawable.touxiang);
+//                    System.out.println("对象"+results.get(i).getAVUser("userName"));
+                    //                   System.out.println(results.get(i).getAVUser("userName").get("username"));
+
+
+
+                    map.put("username",results.get(i).get("username"));
+                    Date date = new Date();
+                    String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));
+                    map.put("time","发布于 "+time);
+                    map.put("starttime","集合时间："+results.get(i).get("time"));
+                    map.put("startplace","出发地点："+results.get(i).get("place_start"));
+                    map.put("endplace","目的地点："+results.get(i).get("place_end"));
+                    map.put("need","需要人数："+results.get(i).get("need_num").toString());
+                    map.put("contact",results.get(i).get("contactInfo"));
+                    map.put("clicks","点击量：");
+                    map.put("clicks_number",results.get(i).get("clicks").toString());
+                    map.put("objectId",results.get(i).getObjectId());
+                    list.add(map);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return list;
+        }
     }
 
     public List<Map<String,Object>> getData(){

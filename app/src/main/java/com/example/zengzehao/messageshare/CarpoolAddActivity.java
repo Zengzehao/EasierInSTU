@@ -65,7 +65,9 @@ public class CarpoolAddActivity extends AppCompatActivity {
                 carpool.put("place_end",endplace_content);
                 carpool.put("need_num",need_content);
                 carpool.put("contactInfo",contact_content);
-                carpool.put("userName", AVUser.getCurrentUser());
+              //  carpool.put("userName", AVUser.getCurrentUser());
+                carpool.put("username",AVUser.getCurrentUser().getUsername());
+                carpool.put("clicks",0);
                 carpool.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(AVException e) {

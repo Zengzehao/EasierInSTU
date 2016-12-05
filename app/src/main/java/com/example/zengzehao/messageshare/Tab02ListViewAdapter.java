@@ -15,6 +15,8 @@ import android.widget.Toast;
 import java.util.List;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by zengzehao on 16-11-23.
  */
@@ -40,7 +42,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
      * @author Administrator
      */
     public final class Zujian {
-        public ImageView portrait;
+        public CircleImageView portrait;
         public TextView username;
         public TextView time;
         public TextView price;
@@ -78,7 +80,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
             zujian = new Zujian();
             //获得组件，实例化组件
             convertView = layoutInflater.inflate(R.layout.tab02_listview, null);
-            zujian.portrait = (ImageView) convertView.findViewById(R.id.tab02_listview_portrait);
+            zujian.portrait = (CircleImageView) convertView.findViewById(R.id.tab02_listview_portrait);
             zujian.username = (TextView) convertView.findViewById(R.id.tab02_listview_username);
             zujian.time = (TextView) convertView.findViewById(R.id.tab02_listview_time);
             zujian.price = (TextView) convertView.findViewById(R.id.tab02_listview_price);
@@ -92,7 +94,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
         }
         //绑定数据
 
-        zujian.portrait.setBackgroundResource((Integer)data.get(position).get("portrait"));
+        //zujian.portrait.setBackgroundResource((Integer)data.get(position).get("portrait"));
         zujian.username.setText((String)data.get(position).get("username"));
         zujian.time.setText((String)data.get(position).get("time"));
         zujian.price.setText((String) data.get(position).get("price"));

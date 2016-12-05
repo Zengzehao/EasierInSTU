@@ -1,152 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     >
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:srcCompat="@drawable/touxiang"
-        android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="15dp"
-        android:id="@+id/tab04_listview_portrait"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <TextView
-        android:text="14zhzeng"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/tab04_listview_portrait"
-        android:layout_toRightOf="@+id/tab04_listview_portrait"
-        android:layout_toEndOf="@+id/tab04_listview_portrait"
-        android:layout_marginLeft="21dp"
-        android:layout_marginStart="21dp"
-        android:id="@+id/tab04_listview_username" />
+        android:paddingBottom="5dp">
 
-    <TextView
-        android:text="集合时间："
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tab04_listview_portrait"
-        android:layout_alignLeft="@+id/tab04_listview_time"
-        android:layout_alignStart="@+id/tab04_listview_time"
-        android:id="@+id/tab04_listview_starttime" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/touxiang"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tab04_listview_portrait"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:text="14zhzeng"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tab04_listview_portrait"
 
-    <TextView
-        android:text="发表于10分钟前"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:id="@+id/tab04_listview_time"
-        android:layout_below="@+id/tab04_listview_username"
-        android:layout_alignLeft="@+id/tab04_listview_username"
-        android:layout_alignStart="@+id/tab04_listview_username" />
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tab04_listview_username" />
 
-    <TextView
-        android:text="2016年12月3日 14:00"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/tab04_listview_starttime"
-        android:layout_toRightOf="@+id/tab04_listview_starttime"
-        android:layout_toEndOf="@+id/tab04_listview_starttime"
-        android:layout_marginLeft="11dp"
-        android:layout_marginStart="11dp"
-        android:id="@+id/tab04_listview_starttime_display" />
+        <TextView
+            android:text="发布于  两个小时前"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_username"
+            android:layout_alignLeft="@+id/tab04_listview_username"
+            android:layout_alignStart="@+id/tab04_listview_username"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tab04_listview_time" />
 
-    <TextView
-        android:text="出发地点："
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tab04_listview_starttime"
-        android:layout_alignLeft="@+id/tab04_listview_starttime"
-        android:layout_alignStart="@+id/tab04_listview_starttime"
-        android:layout_marginTop="10dp"
-        android:id="@+id/tab04_listview_startplace" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tab04_listview_startplace"
-        android:layout_alignLeft="@+id/tab04_listview_startplace"
-        android:layout_alignStart="@+id/tab04_listview_startplace"
-        android:layout_marginTop="9dp"
-        android:id="@+id/tab04_listview_endplace"
-        android:text="目的地点：" />
 
-    <TextView
-        android:text="需要人数："
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:id="@+id/tab04_listview_need"
-        android:layout_below="@+id/tab04_listview_endplace"
-        android:layout_alignLeft="@+id/tab04_listview_endplace"
-        android:layout_alignStart="@+id/tab04_listview_endplace" />
+        <TextView
+            android:text="集合时间：12月4日 12:00"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_time"
+            android:layout_alignLeft="@+id/tab04_listview_time"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tab04_listview_starttime"
+            tools:textColor="@color/avoscloud_feedback_thread_header_background" />
 
-    <TextView
-        android:text="3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/tab04_listview_need"
-        android:layout_toRightOf="@+id/tab04_listview_need"
-        android:layout_toEndOf="@+id/tab04_listview_need"
-        android:id="@+id/tab04_listview_need_display" />
+        <TextView
+            android:text="TextView"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_starttime"
+            android:layout_alignLeft="@+id/tab04_listview_starttime"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/tab04_listview_startplace"
+            tools:text="出发地点：汕头大学"
+            tools:textColor="@color/avoscloud_feedback_thread_header_background" />
 
-    <TextView
-        android:text="点击量"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tab04_listview_need"
-        android:layout_alignLeft="@+id/tab04_listview_portrait"
-        android:layout_alignStart="@+id/tab04_listview_portrait"
-        android:layout_marginTop="11dp"
-        android:id="@+id/tab04_listview_clicks" />
+        <TextView
+            android:text="TextView"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_startplace"
+            android:layout_alignLeft="@+id/tab04_listview_startplace"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/tab04_listview_endplace"
+            tools:text="目的地点：潮汕站"
+            tools:textColor="@color/avoscloud_feedback_thread_header_background" />
 
-    <TextView
-        android:text="10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/tab04_listview_clicks"
-        android:layout_toRightOf="@+id/tab04_listview_clicks"
-        android:layout_toEndOf="@+id/tab04_listview_clicks"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:id="@+id/tab04_listview_clicks_display" />
+        <TextView
+            android:text="TextView"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_endplace"
+            android:layout_alignLeft="@+id/tab04_listview_endplace"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/tab04_listview_need"
+            tools:text="需要人数：3人"
+            tools:textColor="@color/avoscloud_feedback_thread_header_background" />
+        <TextView
+            android:text="13411984877"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab04_listview_need"
+            android:visibility="invisible"
+            android:layout_alignLeft="@+id/tab04_listview_need"
 
-    <Button
-        android:text="我要拼"
-        android:layout_width="70dp"
-        android:layout_height="35dp"
-        android:layout_marginRight="19dp"
-        android:layout_marginEnd="19dp"
-        android:id="@+id/tab04_listview_button"
-        android:layout_below="@+id/tab04_listview_need_display"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="@android:color/holo_green_light" />
+            android:id="@+id/tab04_listview_contact" />
 
-    <TextView
-        android:text="汕头大学"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab04_listview_startplace_display"
-        android:layout_alignBaseline="@+id/tab04_listview_startplace"
-        android:layout_alignBottom="@+id/tab04_listview_startplace"
-        android:layout_alignLeft="@+id/tab04_listview_starttime_display"
-        android:layout_alignStart="@+id/tab04_listview_starttime_display" />
+    </RelativeLayout>
 
-    <TextView
-        android:text="潮汕站"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tab04_listview_endplace_dispaly"
-        android:layout_alignBaseline="@+id/tab04_listview_endplace"
-        android:layout_alignBottom="@+id/tab04_listview_endplace"
-        android:layout_alignLeft="@+id/tab04_listview_startplace_display"
-        android:layout_alignStart="@+id/tab04_listview_startplace_display" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/diliver1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/tab04_listview_clicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diliver1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="点击量:"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/tab04_listview_clicks_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diliver1"
+            android:layout_toRightOf="@+id/tab04_listview_clicks"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="3"
+            android:textSize="13sp"
+            />
+        <Button
+            android:text="我想拼车"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="35dp"
+            android:layout_below="@+id/diliver1"
+            android:id="@+id/tab04_listview_button"
+            android:layout_marginTop="0dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tab04_listview_button"
+            android:background="#808080"
+            />
 
-</RelativeLayout>
+        <TextView
+            android:text="ObjectId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tab04_listview_clicks_number"
+            android:paddingLeft="10dp"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tab04_listview_objectId" />
+    </RelativeLayout>
+
+</LinearLayout>

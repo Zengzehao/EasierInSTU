@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_job_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_job_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_express_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_express_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_better_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_better_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_channel_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_channel_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_message_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_message_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_job_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_job_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_channel_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_message_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_message_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_car_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_car_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_ershou_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_ershou_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_my_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_my_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_ershou_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_ershou_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_my_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_my_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_car_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_car_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_express_normal.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_express_normal.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_better_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_better_pressed.png"
+    }
+]
