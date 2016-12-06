@@ -93,10 +93,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/top_add2"
+        android:layout_below="@+id/sell_add_picture"
         android:layout_alignTop="@+id/sell_add_picture"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:id="@+id/sell_add_picture_button" />
 
 

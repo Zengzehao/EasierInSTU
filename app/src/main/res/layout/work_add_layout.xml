@@ -19,7 +19,8 @@
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
-        android:hint="类型（家教或发传单或×××）" />
+        android:hint="类型（家教或发传单或×××）"
+        android:textSize="14sp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -36,7 +37,8 @@
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
-        android:hint="描述一下兼职的内容,（时间,地点,任务,有无性别要求,薪酬等等）" />
+        android:hint="描述一下兼职的内容,（时间,地点,任务,有无性别要求,薪酬等等）"
+        android:textSize="14sp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -54,6 +56,7 @@
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
+        android:textSize="14sp"
         />
 
     <EditText
@@ -72,6 +75,7 @@
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="10dp"
+        android:textSize="14sp"
         />
 
 </RelativeLayout>

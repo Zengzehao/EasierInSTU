@@ -20,12 +20,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item.xml"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/tab04_listview.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/tab04_listview.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/log_in.xml",

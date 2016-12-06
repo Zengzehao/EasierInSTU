@@ -16,6 +16,8 @@ import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.LogInCallback;
 
+
+
 import static com.example.zengzehao.messageshare.R.layout.log_in;
 
 /**
@@ -78,7 +80,7 @@ public class Login extends AppCompatActivity {
     }
 
     private void initComponents(){
-        logo = (ImageView)findViewById(R.id.logo);
+        logo = (ImageView) findViewById(R.id.logo);
         username = (EditText) findViewById(R.id.user_Name);
         password = (EditText) findViewById(R.id.password);
         login = (Button) findViewById(R.id.login);

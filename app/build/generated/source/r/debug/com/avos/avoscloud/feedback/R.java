@@ -451,7 +451,7 @@ public final class R {
 		public static final int avoscloud_feedback_notification = 0x7f020055;
 		public static final int avoscloud_feedback_thread_actionbar_back = 0x7f020056;
 		public static final int avoscloud_feedback_user_reply_background = 0x7f020057;
-		public static final int notification_template_icon_bg = 0x7f020082;
+		public static final int notification_template_icon_bg = 0x7f020083;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0d00c3;

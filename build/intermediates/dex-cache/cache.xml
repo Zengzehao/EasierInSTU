@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="b8537b880d161f110129859fa167fdce247de9df">
+        sha1="bd3b5ea724f1513ad9d564bd4047c2b962d32d7a">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e63111d07a975b91244f29cd8746800e249c7d52/classes.dex" />
     </item>
     <item
@@ -331,7 +331,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="03f8ba2a0c9d3286676c74e4be8ef0e716776258">
+        sha1="f03d530163f139c1f518a4e2cf8162d5f6852365">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e0300bee4a49d368640f37c2af616b0297e6162c/classes.dex" />
     </item>
 
