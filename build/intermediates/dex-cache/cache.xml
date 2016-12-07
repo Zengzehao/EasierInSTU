@@ -3,120 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_d5932a8e8f590f0967839034868eddd027ec837b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_3e385fa78addb95da8452f8e977e2f453c56481c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/Android/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_e939b8a13a229987ef2a684980d732632256b2e1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.carbs.android/SegmentControlView/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="12737a9920304a2fab6a1e0ee2d4021f4216b114">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/cn.carbs.android-SegmentControlView-1.0.0_e4e1fce30669cd94c82f8c173161fdb72e025226/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ec34a550fb1888e010171c6200bd939829cfe130/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_160bcf0614dc126558593926321445e95e64ea28/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_13ee7686fbd2747c22542135234dc68c7a84ed65/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_4f5337b53ac197f190a34c30b2ee69c7876cc44e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_721f890ceba2042af2b4a279d398146e43ee1baf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/.gradle/caches/modules-2/files-2.1/cn.leancloud.android/Java-WebSocket/1.3.2-leancloud/169fd461930335df8099bcbac99c0f206912ced1/Java-WebSocket-1.3.2-leancloud.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="169fd461930335df8099bcbac99c0f206912ced1">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/Java-WebSocket-1.3.2-leancloud_90ab6c7f23b4eacacdb7c5368a9624307e3318b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_cd34983118b84a3e5a878bc0f8863751487e309c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/zengzehao/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_3bebb4d2e31c9cbfcd2ff14483550f98146c5e06/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/zengzehao/.gradle/caches/modules-2/files-2.1/cn.leancloud.android/fastjson/1.1.39-leancloud/94d4ebd4acdaf01d7445435382eea2d2d38e7534/fastjson-1.1.39-leancloud.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="94d4ebd4acdaf01d7445435382eea2d2d38e7534">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/fastjson-1.1.39-leancloud_57d5c4776b92c8fc367df927bbf58aa639a92ad0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_d5932a8e8f590f0967839034868eddd027ec837b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,6 +57,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-2.1.0_3e385fa78addb95da8452f8e977e2f453c56481c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.15.3/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -171,6 +81,15 @@
         revision="25.0.0"
         sha1="896145203364b9e1d055cb81ac127bab139ad91d">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/qq-sdk-1.6.1-leancloud_2739b72b0b0e38b1f18026caed70d74334e36462/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/Android/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_e939b8a13a229987ef2a684980d732632256b2e1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -201,6 +120,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.carbs.android/SegmentControlView/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="12737a9920304a2fab6a1e0ee2d4021f4216b114">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/cn.carbs.android-SegmentControlView-1.0.0_e4e1fce30669cd94c82f8c173161fdb72e025226/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -225,6 +153,33 @@
         revision="25.0.0"
         sha1="e8e22111961c366adaf13a6db48c56561b5a0fec">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/avoscloud-statistics-v3.15.3_0dcfe751c411cbe82a900149030f5cdfae3da85f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_ec34a550fb1888e010171c6200bd939829cfe130/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_160bcf0614dc126558593926321445e95e64ea28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_13ee7686fbd2747c22542135234dc68c7a84ed65/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -291,6 +246,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_4f5337b53ac197f190a34c30b2ee69c7876cc44e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
         jumboMode="true"
         optimize="true"
@@ -309,12 +273,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_721f890ceba2042af2b4a279d398146e43ee1baf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/.gradle/caches/modules-2/files-2.1/cn.leancloud.android/Java-WebSocket/1.3.2-leancloud/169fd461930335df8099bcbac99c0f206912ced1/Java-WebSocket-1.3.2-leancloud.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="169fd461930335df8099bcbac99c0f206912ced1">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/Java-WebSocket-1.3.2-leancloud_90ab6c7f23b4eacacdb7c5368a9624307e3318b8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.15.3/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="bbe9bead511696bc94d4d2ffc6f214adfb512e9b">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/cn.leancloud.android-avoscloud-feedback-v3.15.3_d251ef2aef854ddf3a5e0a27a7485f06c799d4ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_cd34983118b84a3e5a878bc0f8863751487e309c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -331,8 +322,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f03d530163f139c1f518a4e2cf8162d5f6852365">
+        sha1="c0cb2b618c2bd724e9279fb02c432eefddd6b16b">
         <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e0300bee4a49d368640f37c2af616b0297e6162c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zengzehao/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_3bebb4d2e31c9cbfcd2ff14483550f98146c5e06/classes.dex" />
     </item>
 
 </items>

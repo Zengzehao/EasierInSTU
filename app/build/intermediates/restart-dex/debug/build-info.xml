@@ -5,33 +5,27 @@
     density="400dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="4262662776566"
+    timestamp="5250042646260"
     token="8675429373327893841"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="MANIFEST_FILE_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="598" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="116" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
-    <build
-        timestamp="2868068959400"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/outputs/apk/app-debug.apk"
-            type="MAIN" />
-    </build>
-    <build
-        timestamp="4262662776566"
-        verifier="COLD_SWAP_REQUESTED" />
+    <artifact
+        location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
     <build
         timestamp="19947258531801"
         verifier="CLASS_ADDED" >

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 07 10:51:39 CST 2016
+#Wed Dec 07 11:31:04 CST 2016
 210.set=ANDROID_RESOURCE
 282.file=/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/resources-debug.ap_/res/layout/help_express_add_top_layout.xml
 14.set=ANDROID_RESOURCE

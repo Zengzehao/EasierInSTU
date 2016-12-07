@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-55:12
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-56:12
 	package
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/Andro
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:8:22-73
 application
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:9:5-53:19
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:10:5-54:19
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -54,73 +54,73 @@ MERGED from [com.android.support:gridlayout-v7:25.0.0] /home/zengzehao/AndroidSt
 MERGED from [cn.carbs.android:SegmentControlView:1.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.carbs.android/SegmentControlView/1.0.0/AndroidManifest.xml:11:5-15:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:13:9-41
 	android:supportsRtl
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:14:9-35
 	android:allowBackup
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:11:9-35
 	android:icon
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:12:9-43
 	android:theme
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:14:9-68
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:15:9-68
 activity#com.example.zengzehao.messageshare.MainActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:15:9-17:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:16:9-18:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:15:19-47
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:16:19-47
 activity#com.example.zengzehao.messageshare.Login
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:18:9-24:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:18:19-40
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:19:19-40
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:23:27-74
 activity#com.example.zengzehao.messageshare.SignUp
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:25:9-27:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:26:9-28:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:25:19-41
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:26:19-41
 activity#com.example.zengzehao.messageshare.ResetPassword
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:28:9-30:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:29:9-31:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:28:19-48
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:29:19-48
 activity#com.example.zengzehao.messageshare.CarpoolAddActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:31:9-33:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:32:9-34:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:31:19-53
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:32:19-53
 activity#com.example.zengzehao.messageshare.PersonInfoActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:34:9-36:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:35:9-37:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:34:19-53
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:35:19-53
 activity#com.example.zengzehao.messageshare.ChangeNicknameActiviy
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:37:9-39:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:38:9-40:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:37:19-56
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:38:19-56
 activity#com.example.zengzehao.messageshare.WorkAddActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:40:9-42:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:41:9-43:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:40:19-50
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:41:19-50
 activity#com.example.zengzehao.messageshare.AskExpressAddActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:43:9-45:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:44:9-46:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:43:19-56
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:44:19-56
 activity#com.example.zengzehao.messageshare.HelpExpressAddactivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:46:9-69
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:47:9-69
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:46:19-57
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:47:19-57
 activity#com.example.zengzehao.messageshare.SellAddActivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:47:9-49:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:48:9-50:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:47:19-50
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:48:19-50
 activity#com.example.zengzehao.messageshare.BuyAddAcivity
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:50:9-52:20
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:51:9-53:20
 	android:name
-		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:50:19-48
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:51:19-48
 uses-sdk
 INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [cn.leancloud.android:avoscloud-push:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.15.3/AndroidManifest.xml:7:5-9:41
