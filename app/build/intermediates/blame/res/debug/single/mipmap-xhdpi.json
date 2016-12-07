@@ -24,12 +24,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_job_pressed.png",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_job_pressed.png"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_channel_pressed.png",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_channel_pressed.png"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_job_pressed.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/mipmap-xhdpi/tab_job_pressed.png"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/mipmap-xhdpi/tab_message_pressed.png",

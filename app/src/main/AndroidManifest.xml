@@ -51,6 +51,7 @@
         <activity android:name=".BuyAddAcivity">
 
         </activity>
+        <activity android:name=".Tab01ListViewDetails"></activity>
     </application>
 
 </manifest>

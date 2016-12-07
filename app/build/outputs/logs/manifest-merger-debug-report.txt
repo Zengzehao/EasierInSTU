@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/Andro
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:8:22-73
 application
-ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:10:5-54:19
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:10:5-55:19
 MERGED from [com.android.support:support-v4:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:25.0.0] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/AndroidManifest.xml:25:5-20
@@ -121,6 +121,10 @@ activity#com.example.zengzehao.messageshare.BuyAddAcivity
 ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:51:9-53:20
 	android:name
 		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:51:19-48
+activity#com.example.zengzehao.messageshare.Tab01ListViewDetails
+ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:54:9-67
+	android:name
+		ADDED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml:54:19-55
 uses-sdk
 INJECTED from /home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [cn.leancloud.android:avoscloud-push:v3.15.3] /home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.15.3/AndroidManifest.xml:7:5-9:41

@@ -31,6 +31,7 @@ public class MyFragment4 extends Fragment {
     private ListView listView;
     private ImageButton top_personinfo;
     private ImageButton top_add;
+    List<Map<String,Object>> list;
     public MyFragment4() {
     }
 
@@ -44,7 +45,7 @@ public class MyFragment4 extends Fragment {
             StrictMode.setThreadPolicy(policy);
         }
 
-        List<Map<String,Object>> list = new getData().doInBackground();
+        list= new getData().doInBackground();
         listView.setAdapter(new Tab04ListViewAdapter(getActivity(),list));
        // txt_content.setText("第四个Fragment");
         //获取个人中心 和发布的ImageBUtton
@@ -76,11 +77,6 @@ public class MyFragment4 extends Fragment {
     }
 
     public class getData extends AsyncTask<Void,Void,List<Map<String,Object>>> {
-
-
-
-
-
         @Override
         protected List<Map<String,Object>> doInBackground(Void...voids) {
 

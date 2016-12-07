@@ -1,4 +1,4 @@
-#Wed Dec 07 16:41:28 CST 2016
+#Thu Dec 08 00:32:16 CST 2016
 base.0=/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e0300bee4a49d368640f37c2af616b0297e6162c
 renamed.1=classes.dex
 renamed.0=classes2.dex

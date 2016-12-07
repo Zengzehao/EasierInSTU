@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
@@ -22,8 +23,10 @@ import android.widget.Toast;
 //import com.example.zhouwei.library.CustomPopWindow;
 
 import com.avos.avoscloud.AVCloudQueryResult;
+import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.GetCallback;
 import com.example.zengzehao.messageshare.tools.ConutDate;
 
 import java.util.ArrayList;
@@ -32,6 +35,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 
 public class MyFragment1 extends Fragment {
@@ -56,7 +60,7 @@ public class MyFragment1 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab01, container, false);
 
         listView = (ListView)view.findViewById(R.id.tab01_listview);
@@ -67,8 +71,11 @@ public class MyFragment1 extends Fragment {
             StrictMode.setThreadPolicy(policy);
         }
 
-        List<Map<String, Object>> list= new MyFragment1.getData().doInBackground();
-        listView.setAdapter(new Tab01ListViewAdapter(getActivity(), list));
+        //final List<Map<String, Object>> list= new MyFragment1.getData().doInBackground();
+        final  List<Tab01ListView> list = new MyFragment1.getData2().doInBackground();
+        System.out.println("size:"+list.size());
+        //listView.setAdapter(new Tab01ListViewAdapter(getActivity(), list));
+      listView.setAdapter(new Tab01ListViewAdapter2(list,getActivity()));
         //TextView txt_content = (TextView) view.findViewById(R.id.txt_content);
         //txt_content.setText("第一个Fragment");
        // ListView list_note = (ListView)view.findViewById(R.id.list_view);
@@ -108,6 +115,36 @@ public class MyFragment1 extends Fragment {
                 //System.out.println("跳转到发布界面");
                // showPopMenu();
                 initPopWindow(view);
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                ListView listView = (ListView) adapterView;
+                Tab01ListView tab01ListView = (Tab01ListView) listView.getItemAtPosition(i);
+                String objectId = tab01ListView.getObjectId();
+                final String time = tab01ListView.getTime();
+                //data.get(i).get("username");
+                final AVObject todo = AVObject.createWithoutData("Trade",objectId);
+
+                todo.fetchInBackground(new GetCallback<AVObject>() {
+                    @Override
+                    public void done(AVObject object, AVException e) {
+                        int clicks_number = (int)object.get("clicks");
+                        System.out.println("clicks"+clicks_number);
+                        clicks_number++;
+                        todo.put("clicks",clicks_number);
+                        todo.saveInBackground();
+                    }
+                });
+                Intent intent = new Intent(getActivity(),Tab01ListViewDetails.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("objectId",objectId);
+                bundle.putString("time",time);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                Toast.makeText(getActivity(),"你的id"+objectId,Toast.LENGTH_SHORT).show();
             }
         });
         Log.e("HEHE", "1日狗");
@@ -194,7 +231,7 @@ public class MyFragment1 extends Fragment {
                     String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));
                     map.put("time","发布于 "+time);
                     map.put("type",results.get(i).get("type"));
-                    map.put("description",results.get(i).get("description"));
+                    map.put("title",results.get(i).get("title"));
                     map.put("contact",results.get(i).get("contactInfo"));
                     map.put("clicks_number",results.get(i).get("clicks").toString());
                     map.put("btn_text",results.get(i).get("btn_text"));
@@ -206,6 +243,51 @@ public class MyFragment1 extends Fragment {
             return list;
         }
     }
+
+    public class getData2 extends AsyncTask<Void,Void,List<Tab01ListView> >{
+
+
+
+        @Override
+        protected List<Tab01ListView> doInBackground(Void...voids) {
+
+            List<Tab01ListView> list=new ArrayList<Tab01ListView>();
+
+            String cql = "select * from Trade";
+            try {
+                AVCloudQueryResult result = AVQuery.doCloudQuery(cql);
+                System.out.println(result);
+                List<AVObject> results = (List<AVObject>) result.getResults();
+                for (int i = results.size()-1;i>=0;i--){
+                   // Map<String, Object> map=new HashMap<String, Object>();
+
+                    //map.put("portrait",R.drawable.touxiang);
+//                    System.out.println("对象"+results.get(i).getAVUser("userName"));
+                    //                   System.out.println(results.get(i).getAVUser("userName").get("username"));
+
+
+
+                    //map.put("username",results.get(i).get("userName"));
+                    Date date = new Date();
+                    String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));
+                  //  map.put("time","发布于 "+time);
+                  //  map.put("type",results.get(i).get("type"));
+                 //   map.put("description",results.get(i).get("description"));
+                 //  getActivity() map.put("contact",results.get(i).get("contactInfo"));
+                 //   map.put("clicks_number",results.get(i).get("clicks").toString());
+                 //   map.put("btn_text",results.get(i).get("btn_text"));
+                  //  list.add(map);
+                    list.add(new Tab01ListView(results.get(i).get("userName").toString(),time,
+                            results.get(i).get("title").toString(),results.get(i).getObjectId(),
+                            results.get(i).get("type").toString(),(int)results.get(i).get("clicks")));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return list;
+        }
+    }
+
 
     /*
     private void showPopMenu(){

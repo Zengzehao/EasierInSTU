@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_title">
+
+
+        <TextView
+            android:id="@+id/tab01_listview_details_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/touxiang"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tab01_listview_details_portrait"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:text="14zhzeng"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tab01_listview_details_portrait"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tab01_listview_details_username" />
+
+        <TextView
+            android:text="发布于  两个小时前"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab01_listview_details_username"
+            android:layout_alignLeft="@+id/tab01_listview_details_username"
+            android:layout_alignStart="@+id/tab01_listview_details_username"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tab01_listview_details_time" />
+
+        <TextView
+            android:text="300元"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp"
+            android:id="@+id/tab01_listview_details_price" />
+        <ImageView
+            android:id="@+id/diliver1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_below="@id/tab01_listview_details_portrait"
+            android:layout_marginTop="5dp"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tab01_listview_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="有一辆凤凰牌自行车想出售"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/tab01_listview_details_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab01_listview_details_title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="描述你的宝贝描述你的宝贝描述你的宝贝描述你的宝贝描述你的宝贝"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/tab01_listview_details_button"
+            android:text="我想要"
+            android:textColor="#FFFFFF"
+            android:background="@android:color/holo_blue_dark"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+

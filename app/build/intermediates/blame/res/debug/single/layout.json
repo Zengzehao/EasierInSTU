@@ -28,12 +28,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/tab04_listview.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/sign_up.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/sign_up.xml"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/log_in.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/log_in.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/sign_up.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/sign_up.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/avoscloud_feedback_user_reply.xml",
@@ -48,12 +48,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.15.3/res/layout/avoscloud_feedback_thread_actionbar.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/reset_password.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/reset_password.xml"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/help_express_add_layout.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/help_express_add_layout.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/reset_password.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/reset_password.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
@@ -136,12 +136,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/tab01.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/tab01.xml"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/person_layout.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/person_layout.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/tab01.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/tab01.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
@@ -364,12 +364,16 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/pop_menu2.xml"
     },
     {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/buy_add_layout.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/buy_add_layout.xml"
+    },
+    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/carpool_add_top_layout.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/carpool_add_top_layout.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/buy_add_layout.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/buy_add_layout.xml"
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/tab01_listview_details_layout.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/layout/tab01_listview_details_layout.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",

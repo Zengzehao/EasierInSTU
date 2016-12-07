@@ -150,6 +150,11 @@ public class Tab04ListViewAdapter extends BaseAdapter {
             clicks_number++;
             // 修改 content
             todo.put("clicks",clicks_number);
+            //Zujian zujian = new Zujian();
+            //view = layoutInflater.inflate(R.layout.tab04_listview,null);
+            //zujian.tab04_listview_clicks_number = (TextView) view.findViewById(R.id.tab04_listview_clicks_number);
+            //zujian.tab04_listview_clicks_number.setText(String.valueOf(clicks_number));
+            System.out.println("clicks:"+clicks_number);
             // 保存到云端
             todo.saveInBackground();
             //Toast.makeText(context,"联系方式"+contact,Toast.LENGTH_SHORT).show();

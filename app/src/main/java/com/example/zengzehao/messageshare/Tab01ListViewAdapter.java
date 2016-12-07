@@ -34,7 +34,7 @@ public class Tab01ListViewAdapter extends BaseAdapter {
         public TextView username;
         public TextView time;
         public TextView type;
-        public TextView description;
+        public TextView title;
         public TextView contact;
         public TextView clicks;
         public TextView clicks_number;
@@ -65,7 +65,7 @@ public class Tab01ListViewAdapter extends BaseAdapter {
             zujian.username = (TextView) view.findViewById(R.id.tab01_listview_username);
             zujian.time = (TextView) view.findViewById(R.id.tab01_listview_time);
             zujian.type = (TextView) view.findViewById(R.id.tab01_listview_type);
-            zujian.description = (TextView) view.findViewById(R.id.tab01_listview_description);
+            zujian.title = (TextView) view.findViewById(R.id.tab01_listview_title);
             zujian.contact = (TextView) view.findViewById(R.id.tab01_listview_contact);
             zujian.clicks = (TextView) view.findViewById(R.id.tab01_listview_clicks);
             zujian.clicks_number = (TextView) view.findViewById(R.id.tab01_listview_clicks_number);
@@ -78,7 +78,7 @@ public class Tab01ListViewAdapter extends BaseAdapter {
         zujian.username.setText((String) data.get(i).get("username"));
         zujian.time.setText((String) data.get(i).get("time"));
         zujian.type .setText((String)data.get(i).get("type"));
-        zujian.description.setText((String) data.get(i).get("description"));
+        zujian.title.setText((String) data.get(i).get("title"));
         zujian.contact.setText((String) data.get(i).get("contact"));
         zujian.clicks_number.setText((String) data.get(i).get("clicks_number"));
 

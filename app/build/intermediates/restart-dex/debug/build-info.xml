@@ -1,82 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
-    api-level="23"
-    density="400dpi"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="4236921437713"
-    token="8675429373327893841" >
+    timestamp="30998538296752"
+    token="8675429373327893841"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="327" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="456" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="11" />
     <task
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
+
     <build
-        timestamp="1570131373050"
+        timestamp="29829632876773"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="3167201039295"
-        verifier="METHOD_ADDED" >
+        timestamp="30866625745219"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="3956587829149"
+        timestamp="30998538296752"
         verifier="COMPATIBLE" >
         <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/3956587829149/classes.dex"
+            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/reload-dex/debug/classes.dex"
             type="RELOAD_DEX" />
     </build>
-    <build
-        timestamp="4033735286413"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/4033735286413/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="4085032175954"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/4085032175954/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="4109435446556"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/4109435446556/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="4159481969384"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/4159481969384/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="4201789698360"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/builds/debug/4201789698360/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build timestamp="4236921437713" />
 
 </instant-run>
