@@ -81,7 +81,7 @@ public class PhotoUtils {
 		float roundPx;
 		float left, top, right, bottom, dst_left, dst_top, dst_right, dst_bottom;
 		if (width <= height) {
-			roundPx = width / 2;
+			roundPx = width /2;
 			left = 0;
 			top = 0;
 			right = width;
@@ -92,7 +92,7 @@ public class PhotoUtils {
 			dst_right = width;
 			dst_bottom = width;
 		} else {
-			roundPx = height / 2;
+			roundPx = height /2;
 			float clip = (width - height) / 2;
 			left = clip;
 			right = width - clip;

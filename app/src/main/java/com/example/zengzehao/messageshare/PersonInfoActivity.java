@@ -1,20 +1,24 @@
 package com.example.zengzehao.messageshare;
 
-import android.app.AlertDialog;
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.provider.ContactsContract;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVFile;
@@ -23,9 +27,11 @@ import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.GetDataCallback;
 import com.avos.avoscloud.ProgressCallback;
+import com.avos.avoscloud.SaveCallback;
 import com.example.zengzehao.messageshare.tools.PhotoUtils;
 import com.squareup.picasso.Picasso;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 
@@ -41,7 +47,6 @@ public class PersonInfoActivity extends AppCompatActivity {
     protected static final int TAKE_PICTURE = 1;
     private static final int CROP_SMALL_PICTURE = 2;
     protected static Uri tempUri;
-    private ImageView iv_personal_icon;
     TextView cancel;
 
     CircleImageView portrait;
@@ -82,7 +87,9 @@ public class PersonInfoActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PersonInfoActivity.this.finish();
+                //PersonInfoActivity.this.finish();
+                Intent intent = new Intent(PersonInfoActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -195,8 +202,8 @@ public class PersonInfoActivity extends AppCompatActivity {
         intent.putExtra("aspectX", 1);
         intent.putExtra("aspectY", 1);
         // outputX outputY 是裁剪图片宽高
-        intent.putExtra("outputX", 150);
-        intent.putExtra("outputY", 150);
+        intent.putExtra("outputX", 250);
+        intent.putExtra("outputY", 250);
         intent.putExtra("return-data", true);
         startActivityForResult(intent, CROP_SMALL_PICTURE);
     }
@@ -209,11 +216,12 @@ public class PersonInfoActivity extends AppCompatActivity {
      * @param picdata
      */
     protected void setImageToView(Intent data) {
+
         Bundle extras = data.getExtras();
         if (extras != null) {
             Bitmap photo = extras.getParcelable("data");
             photo = PhotoUtils.toRoundBitmap(photo, tempUri); // 这个时候的图片已经被处理成圆形的了
-            iv_personal_icon.setImageBitmap(photo);
+            portrait.setImageBitmap(photo);
             uploadPic(photo);
         }
     }
@@ -223,16 +231,37 @@ public class PersonInfoActivity extends AppCompatActivity {
         // ... 可以在这里把Bitmap转换成file，然后得到file的url，做文件上传操作
         // 注意这里得到的图片已经是圆形图片了
         // bitmap是没有做个圆形处理的，但已经被裁剪了
+        //BitmapFactory.decodeByteArray(bitmap, 0, bitmap.length);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] data = baos.toByteArray();
 
+
+        AVUser.getCurrentUser().put("image",new AVFile("portrait.png",data));
+        AVUser.getCurrentUser().saveInBackground(new SaveCallback() {
+            @Override
+            public void done(AVException e) {
+                if(e==null){
+                    Toast.makeText(PersonInfoActivity.this,"修改图片成功",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        /*
         String imagePath = PhotoUtils.savePhoto(bitmap, Environment
                 .getExternalStorageDirectory().getAbsolutePath(), String
                 .valueOf(System.currentTimeMillis()));
         Log.e("imagePath", imagePath+"");
+    //    System.out.println("imagePath"+imagePath);
         if(imagePath != null){
             // 拿着imagePath上传了
             // ...
+
         }
+        */
     }
 
+    private void uploadPic2(byte[] data){
+
+    }
 
 }

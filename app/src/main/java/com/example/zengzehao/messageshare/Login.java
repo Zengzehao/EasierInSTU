@@ -15,7 +15,7 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVOSCloud;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.LogInCallback;
-
+import com.squareup.picasso.Picasso;
 
 
 import static com.example.zengzehao.messageshare.R.layout.log_in;
@@ -39,7 +39,9 @@ public class Login extends AppCompatActivity {
         setContentView(log_in);
         AVOSCloud.initialize(this,"6TTLB0Sd6E8EeuwR3uslREsz-gzGzoHsz","zYP2M2Bd9bXR4RzUMKgHgPwz");
         initComponents();
-
+        if(AVUser.getCurrentUser().getAVFile("image") != null){
+            Picasso.with(Login.this).load(AVUser.getCurrentUser().getAVFile("image") == null ? "www" : AVUser.getCurrentUser().getAVFile("image").getUrl()).into(logo);
+        }
 
         //为登录按钮注册监听
         login.setOnClickListener(new View.OnClickListener() {

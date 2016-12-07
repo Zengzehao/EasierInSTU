@@ -7,21 +7,30 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/include2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="41dp"
         android:id="@+id/newNickname"
-        android:hint="请输入新的昵称" />
+        android:hint="请输入新的昵称"
+        android:textSize="14sp"
+        />
 
     <Button
         android:text="确认修改"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/newNickname"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
         android:id="@+id/change_nickname_success"
-        android:background="@android:color/holo_green_light" />
+        android:background="@drawable/button_conner_blue" />
 </RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/touxiang"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tab01_listview_portrait"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:text="14zhzeng"
+            android:textSize="13sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tab01_listview_portrait"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tab01_listview_username" />
+
+        <TextView
+            android:text="发布于  两个小时前"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab01_listview_username"
+            android:layout_alignLeft="@+id/tab01_listview_username"
+            android:layout_alignStart="@+id/tab01_listview_username"
+            android:layout_marginTop="5dp"
+            android:id="@+id/tab01_listview_time" />
+
+        <TextView
+            android:text="出售"
+            android:textSize="15sp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginEnd="27dp"
+            android:id="@+id/tab01_listview_type" />
+
+
+
+        <TextView
+
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab01_listview_time"
+            android:layout_alignLeft="@+id/tab01_listview_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/tab01_listview_description"
+            tools:text="有一辆凤凰牌自行车想出售"
+            tools:textColor="@color/avoscloud_feedback_thread_header_background" />
+
+        <TextView
+            android:text="13411984877"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab01_listview_description"
+            android:visibility="invisible"
+            android:layout_alignLeft="@+id/tab01_listview_type"
+
+            android:id="@+id/tab01_listview_contact" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/diliver1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/tab01_listview_clicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diliver1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="点击量:"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/tab01_listview_clicks_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diliver1"
+            android:layout_toRightOf="@+id/tab01_listview_clicks"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="3"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tab01_listview_clicks"
+            android:background="#808080"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
