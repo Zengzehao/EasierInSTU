@@ -2,7 +2,9 @@ package com.example.zengzehao.messageshare;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,12 +12,26 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ListView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.avos.avoscloud.AVCloudQueryResult;
+import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
+import com.example.zengzehao.messageshare.tools.ConutDate;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 public class MyFragment3 extends Fragment {
+
+    private ListView listView;
     private ImageButton top_personinfo;
     private ImageButton top_add;
 
@@ -28,8 +44,18 @@ public class MyFragment3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab03,container,false);
+        listView = (ListView)view.findViewById(R.id.tab03_listview);
         //TextView txt_content = (TextView) view.findViewById(R.id.txt_content);
         //txt_content.setText("第三个Fragment");
+        //允许从主线程请求网络服务
+        if (android.os.Build.VERSION.SDK_INT > 9) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+        }
+
+        List<Map<String, Object>> list= new MyFragment3.getData().doInBackground();
+        listView.setAdapter(new Tab03ListViewAdapter(getActivity(), list));
+
         top_personinfo = (ImageButton) view.findViewById(R.id.top_personinfo);
         top_add = (ImageButton) view.findViewById(R.id.top_add);
         top_personinfo.setOnClickListener(new View.OnClickListener() {
@@ -103,5 +129,47 @@ public class MyFragment3 extends Fragment {
                 popWindow.dismiss();
             }
         });
+    }
+    public class getData extends AsyncTask<Void,Void,List<Map<String,Object>>> {
+
+
+
+
+
+        @Override
+        protected List<Map<String,Object>> doInBackground(Void...voids) {
+
+            List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
+
+            String cql = "select * from Express";
+            try {
+                AVCloudQueryResult result = AVQuery.doCloudQuery(cql);
+                System.out.println(result);
+                List<AVObject> results = (List<AVObject>) result.getResults();
+                for (int i = results.size()-1;i>=0;i--){
+                    Map<String, Object> map=new HashMap<String, Object>();
+
+                    map.put("portrait",R.drawable.touxiang);
+//                    System.out.println("对象"+results.get(i).getAVUser("userName"));
+                    //                   System.out.println(results.get(i).getAVUser("userName").get("username"));
+
+
+
+                    map.put("username",results.get(i).get("userName"));
+                    Date date = new Date();
+                    String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));
+                    map.put("time","发布于 "+time);
+                    map.put("type",results.get(i).get("type"));
+                    map.put("description",results.get(i).get("description"));
+                    map.put("contact",results.get(i).get("contactInfo"));
+                    map.put("endtime",results.get(i).get("deadline"));
+                    map.put("btn_text",results.get(i).get("btn_text"));
+                    list.add(map);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return list;
+        }
     }
 }

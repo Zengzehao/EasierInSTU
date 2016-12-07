@@ -1,5 +1,6 @@
 package com.example.zengzehao.messageshare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     public static final int PAGE_TWO = 1;
     public static final int PAGE_THREE = 2;
     public static final int PAGE_FOUR = 3;
-
+     int page;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         setContentView(R.layout.activity_main);
         mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
         bindViews();
+
         rb_channel.setChecked(true);
+
+
+
     }
 
     private void bindViews() {
@@ -50,9 +55,12 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         rb_setting = (RadioButton) findViewById(R.id.rb_setting);
         rg_tab_bar.setOnCheckedChangeListener(this);
 
+        Intent intent = getIntent();
+         page= intent.getIntExtra("Page",0);
+        System.out.println("Page:"+page);
         vpager = (ViewPager) findViewById(R.id.vpager);
         vpager.setAdapter(mAdapter);
-        vpager.setCurrentItem(0);
+        vpager.setCurrentItem(page);
         vpager.addOnPageChangeListener(this);
     }
 

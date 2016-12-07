@@ -101,7 +101,7 @@ public class Tab02ListViewAdapter extends BaseAdapter {
         zujian.type.setText((String)data.get(position).get("type"));
         zujian.description.setText((String)data.get(position).get("description"));
         zujian.contact.setText((String)data.get(position).get("contact"));
-        System.out.println("联系方式"+zujian.contact.getText().toString());
+      //  System.out.println("联系方式"+zujian.contact.getText().toString());
         zujian.button.setOnClickListener(new MyClickListner(zujian.contact.getText().toString()));
 
 
