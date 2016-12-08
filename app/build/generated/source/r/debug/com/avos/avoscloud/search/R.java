@@ -11,8 +11,8 @@ public final class R {
 		public static final int avoscloud_blue = 0x7f0c0010;
 	}
 	public static final class drawable {
-		public static final int avoscloud_search_actionbar_back = 0x7f020066;
-		public static final int avoscloud_search_result_open_background = 0x7f020067;
+		public static final int avoscloud_search_actionbar_back = 0x7f020068;
+		public static final int avoscloud_search_result_open_background = 0x7f020069;
 	}
 	public static final class id {
 		public static final int avoscloud_search_actionbar_back = 0x7f0e0098;

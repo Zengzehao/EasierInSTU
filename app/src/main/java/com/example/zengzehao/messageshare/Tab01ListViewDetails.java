@@ -8,8 +8,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.AVFile;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.GetCallback;
+
+import java.util.ArrayList;
 
 /**
  * Created by zengzehao on 16-12-7.
@@ -48,6 +51,8 @@ public class Tab01ListViewDetails extends AppCompatActivity {
                 price.setText(object.get("price").toString());
                 title.setText(object.get("title").toString());
                 description.setText(object.get("description").toString());
+                ArrayList<AVFile> images = (ArrayList<AVFile>) object.get("images");
+                System.out.println("images:"+images.size());
             }
         });
 

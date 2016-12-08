@@ -446,12 +446,12 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f02005d;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f02005e;
 		public static final int abc_textfield_search_material = 0x7f02005f;
-		public static final int avoscloud_feedback_actionbar_background = 0x7f020061;
-		public static final int avoscloud_feedback_dev_reply_background = 0x7f020062;
-		public static final int avoscloud_feedback_notification = 0x7f020063;
-		public static final int avoscloud_feedback_thread_actionbar_back = 0x7f020064;
-		public static final int avoscloud_feedback_user_reply_background = 0x7f020065;
-		public static final int notification_template_icon_bg = 0x7f020091;
+		public static final int avoscloud_feedback_actionbar_background = 0x7f020063;
+		public static final int avoscloud_feedback_dev_reply_background = 0x7f020064;
+		public static final int avoscloud_feedback_notification = 0x7f020065;
+		public static final int avoscloud_feedback_thread_actionbar_back = 0x7f020066;
+		public static final int avoscloud_feedback_user_reply_background = 0x7f020067;
+		public static final int notification_template_icon_bg = 0x7f020093;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e00d3;
