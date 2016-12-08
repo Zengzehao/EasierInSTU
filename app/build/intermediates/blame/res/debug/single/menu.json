@@ -2,5 +2,13 @@
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/menu/__picker_menu_preview.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/me.iwf.photopicker/PhotoPicker/0.9.0/res/menu/__picker_menu_preview.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/menu/__picker_menu_picker.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/me.iwf.photopicker/PhotoPicker/0.9.0/res/menu/__picker_menu_picker.xml"
     }
 ]

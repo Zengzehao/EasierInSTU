@@ -8,32 +8,32 @@ package com.avos.avoscloud.search;
 
 public final class R {
 	public static final class color {
-		public static final int avoscloud_blue = 0x7f0b0007;
+		public static final int avoscloud_blue = 0x7f0c0010;
 	}
 	public static final class drawable {
-		public static final int avoscloud_search_actionbar_back = 0x7f020058;
-		public static final int avoscloud_search_result_open_background = 0x7f020059;
+		public static final int avoscloud_search_actionbar_back = 0x7f020066;
+		public static final int avoscloud_search_result_open_background = 0x7f020067;
 	}
 	public static final class id {
-		public static final int avoscloud_search_actionbar_back = 0x7f0d008c;
-		public static final int avoscloud_search_actionbar_title = 0x7f0d008d;
-		public static final int avoscloud_search_emtpy_result = 0x7f0d008f;
-		public static final int avoscloud_search_result_description = 0x7f0d0091;
-		public static final int avoscloud_search_result_listview = 0x7f0d008e;
-		public static final int avoscloud_search_result_open_app = 0x7f0d0092;
-		public static final int avoscloud_search_result_title = 0x7f0d0090;
+		public static final int avoscloud_search_actionbar_back = 0x7f0e0098;
+		public static final int avoscloud_search_actionbar_title = 0x7f0e0099;
+		public static final int avoscloud_search_emtpy_result = 0x7f0e009b;
+		public static final int avoscloud_search_result_description = 0x7f0e009d;
+		public static final int avoscloud_search_result_listview = 0x7f0e009a;
+		public static final int avoscloud_search_result_open_app = 0x7f0e009e;
+		public static final int avoscloud_search_result_title = 0x7f0e009c;
 	}
 	public static final class layout {
-		public static final int avoscloud_search_actionbar = 0x7f040021;
-		public static final int avoscloud_search_activity = 0x7f040022;
-		public static final int avoscloud_search_loading = 0x7f040023;
-		public static final int avoscloud_search_result_item = 0x7f040024;
+		public static final int avoscloud_search_actionbar = 0x7f040029;
+		public static final int avoscloud_search_activity = 0x7f04002a;
+		public static final int avoscloud_search_loading = 0x7f04002b;
+		public static final int avoscloud_search_result_item = 0x7f04002c;
 	}
 	public static final class raw {
 	}
 	public static final class string {
-		public static final int avoscloud_search_empty_result_text = 0x7f06001c;
-		public static final int avoscloud_search_open_app_text = 0x7f06001d;
-		public static final int avoscloud_search_result_title = 0x7f06001e;
+		public static final int avoscloud_search_empty_result_text = 0x7f070029;
+		public static final int avoscloud_search_open_app_text = 0x7f07002a;
+		public static final int avoscloud_search_result_title = 0x7f07002b;
 	}
 }

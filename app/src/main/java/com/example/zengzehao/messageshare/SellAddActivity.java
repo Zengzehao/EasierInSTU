@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.OrientationHelper;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -14,6 +17,12 @@ import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVUser;
 import com.avos.avoscloud.SaveCallback;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import me.iwf.photopicker.PhotoPicker;
+import me.iwf.photopicker.PhotoPreview;
 
 /**
  * Created by zengzehao on 16-12-6.
@@ -32,12 +41,24 @@ public class SellAddActivity extends AppCompatActivity {
     String description_content;
     String price_content;
     String contact_content;
+
+    private PhotoAdapter photoAdapter;
+
+    private ArrayList<String> selectedPhotos = new ArrayList<>();
+
+
     
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sell_add_layout);
         init();
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        System.out.println("resyslerview:"+recyclerView);
+        photoAdapter = new PhotoAdapter(this, selectedPhotos);
+
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(4, OrientationHelper.VERTICAL));
+        recyclerView.setAdapter(photoAdapter);
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,10 +90,54 @@ public class SellAddActivity extends AppCompatActivity {
                 });
             }
         });
+
+        add_pic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PhotoPicker.builder()
+                        .setPhotoCount(3)
+                        .setShowCamera(true)
+                        .setSelected(selectedPhotos)
+                        .start(SellAddActivity.this);
+
+            }
+        });
+
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this,
+                (view, position) ->
+                        PhotoPreview.builder()
+                                .setPhotos(selectedPhotos)
+                                .setCurrentItem(position)
+                                .start(SellAddActivity.this)
+        ));
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK &&
+                (requestCode == PhotoPicker.REQUEST_CODE || requestCode == PhotoPreview.REQUEST_CODE)) {
+
+            List<String> photos = null;
+            if (data != null) {
+                photos = data.getStringArrayListExtra(PhotoPicker.KEY_SELECTED_PHOTOS);
+                System.out.println("photos:"+photos);
+            }
+            selectedPhotos.clear();
+
+            if (photos != null) {
+
+                selectedPhotos.addAll(photos);
+            }
+            photoAdapter.notifyDataSetChanged();
+        }
+    }
+
     private void init(){
         cancel = (TextView) findViewById(R.id.sell_add_cancel);
         add = (TextView) findViewById(R.id.sell_add_success);
+        add_pic = (ImageButton) findViewById(R.id.sell_add_picture_button);
         title = (EditText) findViewById(R.id.sell_add_title);
         description = (EditText) findViewById(R.id.sell_add_description);
         price = (EditText) findViewById(R.id.sell_add_price);
