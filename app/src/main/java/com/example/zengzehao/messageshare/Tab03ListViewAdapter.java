@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 import java.util.Map;
 
@@ -82,6 +84,9 @@ public class Tab03ListViewAdapter extends BaseAdapter {
             zujian = (Zujian) view.getTag();
         }
         //绑定数据
+        String URL = (String) data.get(i).get("portraitUrl");
+        System.out.println("ViewportraitURL3:"+(String) data.get(i).get("portraitUrl"));
+        Picasso.with(context).load(URL).into(zujian.portrait);
         zujian.username.setText((String)data.get(i).get("username"));
         zujian.time.setText((String)data.get(i).get("time"));
         zujian.type.setText((String)data.get(i).get("type"));

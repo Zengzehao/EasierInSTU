@@ -11,7 +11,9 @@ public class Tab01ListView {
     private String objectId;
     private String type;
     private String contact;
+
     private int clicks_number;
+
 
     public Tab01ListView(String username, String time, String title, String objectId, String type, String contact, int clicks_number) {
         this.username = username;

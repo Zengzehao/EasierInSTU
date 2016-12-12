@@ -108,8 +108,8 @@ public class Tab04ListViewAdapter extends BaseAdapter {
         //绑定数据
 
  //       zujian.tab04_listview_portrait.setBackgroundResource((Integer) data.get(i).get("portrait"));
-        System.out.println("ViewportraitURL:"+data.get(i).get("portraitUrl"));
-        System.out.println("ViewportraitURL2:"+(String) data.get(i).get("portraitUrl"));
+       // System.out.println("ViewportraitURL:"+data.get(i).get("portraitUrl"));
+       // System.out.println("ViewportraitURL2:"+(String) data.get(i).get("portraitUrl"));
 
         String URL = (String) data.get(i).get("portraitUrl");
             System.out.println("ViewportraitURL3:"+(String) data.get(i).get("portraitUrl"));

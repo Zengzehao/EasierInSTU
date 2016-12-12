@@ -281,7 +281,7 @@ public class MyFragment1 extends Fragment {
                   //  list.add(map);
                     list.add(new Tab01ListView(results.get(i).get("userName").toString(),time,
                             results.get(i).get("title").toString(),results.get(i).getObjectId(),
-                            results.get(i).get("type").toString(),results.get(i).getString("contactInfo").toString(),(int)results.get(i).get("clicks")));
+                            results.get(i).get("type").toString(),results.get(i).get("contactInfo").toString(),(int)results.get(i).get("clicks")));
                 }
             } catch (Exception e) {
                 e.printStackTrace();
