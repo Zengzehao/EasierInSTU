@@ -26,6 +26,7 @@ import com.avos.avoscloud.AVCloudQueryResult;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.GetCallback;
 import com.example.zengzehao.messageshare.tools.ConutDate;
 
@@ -56,6 +57,7 @@ public class MyFragment1 extends Fragment {
     private TextView menu1;
     private TextView menu2;
 
+    List<Tab01ListView> list=new ArrayList<Tab01ListView>();
     public MyFragment1() {
     }
 
@@ -65,16 +67,20 @@ public class MyFragment1 extends Fragment {
 
         listView = (ListView)view.findViewById(R.id.tab01_listview);
 
+        /*
         //允许从主线程请求网络服务
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
-
+        */
         //final List<Map<String, Object>> list= new MyFragment1.getData().doInBackground();
-        final  List<Tab01ListView> list = new MyFragment1.getData2().doInBackground();
-        System.out.println("size:"+list.size());
+        //
+        // final  List<Tab01ListView> list = new MyFragment1.getData2().doInBackground();
+        //System.out.println("size:"+list.size());
         //listView.setAdapter(new Tab01ListViewAdapter(getActivity(), list));
+        getData2 getdata = new getData2();
+        getdata.execute();
       listView.setAdapter(new Tab01ListViewAdapter2(list,getActivity()));
         //TextView txt_content = (TextView) view.findViewById(R.id.txt_content);
         //txt_content.setText("第一个Fragment");
@@ -202,7 +208,7 @@ public class MyFragment1 extends Fragment {
             }
         });
     }
-
+    /*
     public class getData extends AsyncTask<Void,Void,List<Map<String,Object>>> {
 
 
@@ -245,6 +251,7 @@ public class MyFragment1 extends Fragment {
             return list;
         }
     }
+    */
 
     public class getData2 extends AsyncTask<Void,Void,List<Tab01ListView> >{
 
@@ -253,7 +260,7 @@ public class MyFragment1 extends Fragment {
         @Override
         protected List<Tab01ListView> doInBackground(Void...voids) {
 
-            List<Tab01ListView> list=new ArrayList<Tab01ListView>();
+            list=new ArrayList<Tab01ListView>();
 
             String cql = "select * from Trade";
             try {
@@ -262,11 +269,27 @@ public class MyFragment1 extends Fragment {
                 List<AVObject> results = (List<AVObject>) result.getResults();
                 for (int i = results.size()-1;i>=0;i--){
                    // Map<String, Object> map=new HashMap<String, Object>();
-
+                    Tab01ListView tab01ListView = new Tab01ListView();
                     //map.put("portrait",R.drawable.touxiang);
 //                    System.out.println("对象"+results.get(i).getAVUser("userName"));
                     //                   System.out.println(results.get(i).getAVUser("userName").get("username"));
+                    String username = results.get(i).get("userName").toString();
+                    AVQuery<AVObject> query = AVQuery.getQuery("_User");
+                    query.whereEqualTo("username", username);
+                    query.findInBackground(new FindCallback<AVObject>() {
+                        @Override
+                        public void done(List<AVObject> list, AVException e) {
+                            if (e != null) {
+                                Log.i("bo", "又失败");
+                            } else {
+                                Log.i("bo", "成功");
+                                List<AVObject> users = list;
 
+                                System.out.println(users.get(0).getAVFile("image").getUrl());
+                                tab01ListView.setUrl(users.get(0).getAVFile("image").getUrl());;
+                            }
+                        }
+                    });
 
 
                     //map.put("username",results.get(i).get("userName"));
@@ -279,9 +302,20 @@ public class MyFragment1 extends Fragment {
                  //   map.put("clicks_number",results.get(i).get("clicks").toString());
                  //   map.put("btn_text",results.get(i).get("btn_text"));
                   //  list.add(map);
+                    tab01ListView.setUsername(results.get(i).get("userName").toString());
+                    tab01ListView.setTime(time);
+                    tab01ListView.setTitle(results.get(i).get("title").toString());
+                    tab01ListView.setObjectId(results.get(i).getObjectId());
+                    tab01ListView.setType(results.get(i).get("type").toString());
+                    tab01ListView.setContact(results.get(i).get("contactInfo").toString());
+                    tab01ListView.setClicks_number((int)results.get(i).get("clicks"));
+                    /*
                     list.add(new Tab01ListView(results.get(i).get("userName").toString(),time,
                             results.get(i).get("title").toString(),results.get(i).getObjectId(),
                             results.get(i).get("type").toString(),results.get(i).get("contactInfo").toString(),(int)results.get(i).get("clicks")));
+                    */
+                    list.add(tab01ListView);
+                    System.out.println("tabList"+list.size());
                 }
             } catch (Exception e) {
                 e.printStackTrace();

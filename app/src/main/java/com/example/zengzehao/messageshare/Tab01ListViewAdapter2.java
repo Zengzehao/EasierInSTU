@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -71,6 +73,9 @@ public class Tab01ListViewAdapter2 extends BaseAdapter {
         }
 
         //绑定数据
+        String URL = (String) data.get(i).getUrl();
+        System.out.println("ViewportraitURL3:"+(String) data.get(i).getUrl());
+        Picasso.with(context).load(URL).into(zujian.portrait);
         zujian.username.setText((String) data.get(i).getUsername());
         zujian.time.setText((String) data.get(i).getTime());
         zujian.type .setText((String)data.get(i).getType());
