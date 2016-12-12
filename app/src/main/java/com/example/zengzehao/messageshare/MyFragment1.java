@@ -124,6 +124,7 @@ public class MyFragment1 extends Fragment {
                 ListView listView = (ListView) adapterView;
                 Tab01ListView tab01ListView = (Tab01ListView) listView.getItemAtPosition(i);
                 String objectId = tab01ListView.getObjectId();
+                String contact = tab01ListView.getContact();
                 final String time = tab01ListView.getTime();
                 //data.get(i).get("username");
                 final AVObject todo = AVObject.createWithoutData("Trade",objectId);
@@ -142,6 +143,7 @@ public class MyFragment1 extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putString("objectId",objectId);
                 bundle.putString("time",time);
+                bundle.putString("contact",contact);
                 intent.putExtras(bundle);
                 startActivity(intent);
                 Toast.makeText(getActivity(),"你的id"+objectId,Toast.LENGTH_SHORT).show();
@@ -279,7 +281,7 @@ public class MyFragment1 extends Fragment {
                   //  list.add(map);
                     list.add(new Tab01ListView(results.get(i).get("userName").toString(),time,
                             results.get(i).get("title").toString(),results.get(i).getObjectId(),
-                            results.get(i).get("type").toString(),(int)results.get(i).get("clicks")));
+                            results.get(i).get("type").toString(),results.get(i).getString("contactInfo").toString(),(int)results.get(i).get("clicks")));
                 }
             } catch (Exception e) {
                 e.printStackTrace();

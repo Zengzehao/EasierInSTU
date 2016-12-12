@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -21,8 +22,11 @@ import android.widget.Toast;
 import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVFile;
 import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVQuery;
 import com.avos.avoscloud.AVUser;
+import com.avos.avoscloud.FindCallback;
 import com.avos.avoscloud.SaveCallback;
+import com.example.zengzehao.messageshare.tools.RandomStringUtil;
 
 import java.io.ByteArrayOutputStream;
 import java.lang.ref.WeakReference;
@@ -82,16 +86,32 @@ public class SellAddActivity extends AppCompatActivity {
                 AVObject sell = new AVObject("Trade");
                 System.out.println("size:"+selectedPhotos.size());
                // HashMap<String, AVFile> hashMap = new HashMap<>();
-               ArrayList<AVFile> arrayList = new ArrayList<>();
+                ArrayList<AVFile> arrayList = new ArrayList<>();
+                ArrayList<String> arrayObjectId = new ArrayList<String>();
                 for (int i =0;i<selectedPhotos.size();i++){
                     System.out.println(selectedPhotos.get(i));
-                    Bitmap bitmap =convertToBitmap(selectedPhotos.get(i),50,50);
+                    Bitmap bitmap =convertToBitmap(selectedPhotos.get(i),900,600);
                     ByteArrayOutputStream baos = new ByteArrayOutputStream();
                     bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
                     byte[] data = baos.toByteArray();
-                    arrayList.add(new AVFile(i+".png",data));
+                    AVFile avFile = new AVFile(RandomStringUtil.getString(6)+".png",data);
+                    //String objectId;
+                    avFile.saveInBackground(new SaveCallback() {
+                        @Override
+                        public void done(AVException e) {
+                            if(e==null){
+                                System.out.println("objextId:"+avFile.getObjectId());
+                                arrayObjectId.add(avFile.getObjectId().toString());
+                            }
+                        }
+                    });
+
+                     arrayList.add(avFile);
+                    //sell.saveInBackground();
+                    //AVObject todo = AVObject.createWithoutData("CarpoolTest",);
                     //hashMap.put("image",new AVFile(i+".png",data));
                 }
+                sell.put("objectsId",arrayObjectId);
                 sell.put("images",arrayList);
                 //sell.put("images",hashMap);
                 sell.put("userName", AVUser.getCurrentUser().getUsername());
@@ -101,6 +121,8 @@ public class SellAddActivity extends AppCompatActivity {
                 sell.put("contactInfo",contact_content);
                 sell.put("type","出售");
                 sell.put("clicks",0);
+                //System.out.println("id"+sell.getObjectId());
+
                 sell.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(AVException e) {

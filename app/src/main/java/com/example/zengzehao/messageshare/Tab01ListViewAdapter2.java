@@ -75,7 +75,7 @@ public class Tab01ListViewAdapter2 extends BaseAdapter {
         zujian.time.setText((String) data.get(i).getTime());
         zujian.type .setText((String)data.get(i).getType());
         zujian.title.setText((String) data.get(i).getTitle());
-        //zujian.contact.setText((String) data.get(i).get("contact"));
+        zujian.contact.setText((String) data.get(i).getContact());
         zujian.clicks_number.setText((String.valueOf(data.get(i).getClicks_number())));
 
         return view;

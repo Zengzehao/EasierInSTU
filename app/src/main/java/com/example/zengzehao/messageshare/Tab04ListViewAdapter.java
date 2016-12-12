@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.AVUser;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 import java.util.Map;
@@ -80,7 +82,7 @@ public class Tab04ListViewAdapter extends BaseAdapter {
             zujian = new Zujian();
             //实例化组件
             view = layoutInflater.inflate(R.layout.tab04_listview,null);
-//            zujian.tab04_listview_portrait = (ImageView) view.findViewById(R.id.tab04_listview_portrait);
+            //zujian.tab04_listview_portrait = (ImageView) view.findViewById(R.id.tab04_listview_portrait);
             zujian.tab04_listview_portrait = (ImageView)view.findViewById(R.id.tab04_listview_portrait);
             zujian.tab04_listview_username = (TextView) view.findViewById(R.id.tab04_listview_username);
             zujian.tab04_listview_time = (TextView) view.findViewById(R.id.tab04_listview_time);
@@ -106,6 +108,13 @@ public class Tab04ListViewAdapter extends BaseAdapter {
         //绑定数据
 
  //       zujian.tab04_listview_portrait.setBackgroundResource((Integer) data.get(i).get("portrait"));
+        System.out.println("ViewportraitURL:"+data.get(i).get("portraitUrl"));
+        System.out.println("ViewportraitURL2:"+(String) data.get(i).get("portraitUrl"));
+
+        String URL = (String) data.get(i).get("portraitUrl");
+            System.out.println("ViewportraitURL3:"+(String) data.get(i).get("portraitUrl"));
+            Picasso.with(context).load(URL).into(zujian.tab04_listview_portrait);
+
         zujian.tab04_listview_username.setText((String)data.get(i).get("username"));
         zujian.tab04_listview_time.setText((String)data.get(i).get("time"));
         zujian.tab04_listview_starttime.setText((String)data.get(i).get("starttime"));

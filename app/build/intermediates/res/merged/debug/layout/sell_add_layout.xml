@@ -93,7 +93,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/add_pic2"
+        app:srcCompat="@drawable/add_pic"
         android:layout_below="@+id/sell_add_picture"
         android:layout_alignTop="@+id/sell_add_picture"
         android:layout_alignParentLeft="true"

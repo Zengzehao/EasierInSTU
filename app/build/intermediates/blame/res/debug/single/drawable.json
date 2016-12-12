@@ -120,12 +120,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/tab_menu_text.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/right_arrow.png",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/right_arrow.png"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/right_arrow.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/right_arrow.png"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/r2_arrow.png",
@@ -146,6 +146,10 @@
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/add_pic.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/add_pic.png"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/__picker_checkbox_bg.xml",
@@ -176,6 +180,10 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/add_pic2.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/add_pic2.png"
+    },
+    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
@@ -204,12 +212,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/res/drawable/design_fab_background.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/top_add2.png",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/top_add2.png"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/top_add2.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/top_add2.png"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/shape_top_corner_no_bottom_line.xml",
@@ -240,10 +248,6 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.4/res/drawable/avoscloud_search_result_open_background.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/avoscloud_search_actionbar_back.png",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.4/res/drawable/avoscloud_search_actionbar_back.png"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/tab_menu_channel.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/tab_menu_channel.xml"
     },
@@ -254,6 +258,10 @@
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/avoscloud_search_actionbar_back.png",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.15.4/res/drawable/avoscloud_search_actionbar_back.png"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/button_conner.xml",
@@ -280,12 +288,12 @@
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/button_conner_blue.xml"
     },
     {
-        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/shape_bottom_corner_no_top_line.xml",
-        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/shape_bottom_corner_no_top_line.xml"
-    },
-    {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
         "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/shape_bottom_corner_no_top_line.xml",
+        "source": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/src/main/res/drawable/shape_bottom_corner_no_top_line.xml"
     },
     {
         "merged": "/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/res/merged/debug/drawable/person2.png",

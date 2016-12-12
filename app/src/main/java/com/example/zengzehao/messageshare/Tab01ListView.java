@@ -10,14 +10,16 @@ public class Tab01ListView {
     private String title;
     private String objectId;
     private String type;
+    private String contact;
     private int clicks_number;
 
-    public Tab01ListView(String username, String time, String title, String objectId, String type, int clicks_number) {
+    public Tab01ListView(String username, String time, String title, String objectId, String type, String contact, int clicks_number) {
         this.username = username;
         this.time = time;
         this.title = title;
         this.objectId = objectId;
         this.type = type;
+        this.contact = contact;
         this.clicks_number = clicks_number;
     }
 
@@ -39,6 +41,10 @@ public class Tab01ListView {
 
     public String getType() {
         return type;
+    }
+
+    public String getContact() {
+        return contact;
     }
 
     public int getClicks_number() {

@@ -15,8 +15,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.avos.avoscloud.AVCloudQueryResult;
+import com.avos.avoscloud.AVException;
 import com.avos.avoscloud.AVObject;
 import com.avos.avoscloud.AVQuery;
+import com.avos.avoscloud.AVUser;
+import com.avos.avoscloud.FindCallback;
+import com.avos.avoscloud.GetCallback;
 import com.example.zengzehao.messageshare.tools.ConutDate;
 
 import java.util.ArrayList;
@@ -31,7 +35,7 @@ public class MyFragment4 extends Fragment {
     private ListView listView;
     private ImageButton top_personinfo;
     private ImageButton top_add;
-    List<Map<String,Object>> list;
+    public List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
     public MyFragment4() {
     }
 
@@ -39,13 +43,16 @@ public class MyFragment4 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab04,container,false);
         listView = (ListView) view.findViewById(R.id.tab04_listview);
+        /*
         //允许从主线程请求网络服务
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
         }
+        */
 
-        list= new getData().doInBackground();
+        getData getData = new getData();
+        getData.execute();
         listView.setAdapter(new Tab04ListViewAdapter(getActivity(),list));
        // txt_content.setText("第四个Fragment");
         //获取个人中心 和发布的ImageBUtton
@@ -77,15 +84,14 @@ public class MyFragment4 extends Fragment {
     }
 
     public class getData extends AsyncTask<Void,Void,List<Map<String,Object>>> {
+
         @Override
         protected List<Map<String,Object>> doInBackground(Void...voids) {
-
-            List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
-
+            list = new ArrayList<Map<String,Object>>();
             String cql = "select * from CarpoolTest";
             try {
                 AVCloudQueryResult result = AVQuery.doCloudQuery(cql);
-                System.out.println(result);
+                //System.out.println(result);
                 List<AVObject> results = (List<AVObject>) result.getResults();
                 for (int i = results.size()-1;i>=0;i--){
                     Map<String, Object> map=new HashMap<String, Object>();
@@ -94,8 +100,72 @@ public class MyFragment4 extends Fragment {
 //                    System.out.println("对象"+results.get(i).getAVUser("userName"));
                     //                   System.out.println(results.get(i).getAVUser("userName").get("username"));
 
+                    String username = results.get(i).get("username").toString();
+                    /*
+                    System.out.println("username:"+username);
+                    AVQuery<AVUser> query = new AVQuery<>("_User");
+                    query.whereEqualTo("username", username);
+                    query.findInBackground(new FindCallback<AVUser>() {
+                        @Override
+                        public void done(List<AVUser> list, AVException e) {
+                            // 标题不是「出差」和「休假」的 Todo 对象列表
+                            List<AVUser> users = list;
+                            System.out.println("user:"+users);
+                        }
+                    });
+                    */
+                    //String usernameId = results.get(i).get("usernameId").toString();
+                   // System.out.println("usernameId:"+usernameId);
+                    /*
+                    AVQuery<AVObject> query = AVQuery.getQuery("CarpoolTest");
+                    query.include("usernameId");
+                    query.findInBackground(new FindCallback<AVObject>() {
+                        @Override
+                        public void done(List<AVObject> list, AVException e) {
+                            if (e != null) {
+                                Log.i("bo", "又失败");
+                            } else {
+                                Log.i("bo", "成功");
+                                for(AVObject users : list){
+                                    AVUser user=users.getAVObject("usernameId");
+                                    System.out.println("user:"+user.getUsername());
+                                    System.out.println("portraitUrl:"+user.getAVFile("image").getUrl());
+                                    //Log.i("bo", stu.getClassName()+":"+ban.getUsername()+":在"+ban.getString("name")+"班");
+                                    //加个switch case 存储到list可做缓存逻辑
+                                    map.put("portraitUrl",user.getAVFile("image").getUrl());
+                                    System.out.println("portraitUrl2:"+user.getAVFile("image").getUrl());
+                                }
+                            }
+                        }
+                    });
+                    */
 
+                    AVQuery<AVObject> query = AVQuery.getQuery("_User");
+                    query.whereEqualTo("username", username);
+                    query.findInBackground(new FindCallback<AVObject>() {
+                        @Override
+                        public void done(List<AVObject> list, AVException e) {
+                            if (e != null) {
+                                Log.i("bo", "又失败");
+                            } else {
+                                Log.i("bo", "成功");
+                                List<AVObject> users = list;
 
+                                System.out.println(users.get(0).getAVFile("image").getUrl());
+                                map.put("portraitUrl",users.get(0).getAVFile("image").getUrl());
+                            }
+                        }
+                    });
+
+                    /*
+                    String cql2 = "select * from _User where username = '"+username+"'";
+
+                    AVCloudQueryResult result2 = AVQuery.doCloudQuery(cql2);
+                        //System.out.println(result);
+                    List<AVObject> results2 = (List<AVObject>) result.getResults();
+
+                    map.put("portraitUrl",results2.get(0).getAVFile("image").getUrl());
+                    */
                     map.put("username",results.get(i).get("username"));
                     Date date = new Date();
                     String time = ConutDate.conutTwoDate(date,(Date) results.get(i).get("createdAt"));

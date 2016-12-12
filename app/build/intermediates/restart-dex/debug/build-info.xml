@@ -5,59 +5,37 @@
     density="xxhdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="9059950989408"
+    timestamp="13079438152553"
     token="8675429373327893841"
-    verifier="FIELD_TYPE_CHANGE" >
+    verifier="CLASS_ADDED" >
 
     <task
         name="javac"
-        duration="367" />
+        duration="425" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="40" />
     <task
         name="verifier"
-        duration="1" />
+        duration="2" />
 
-    <artifact
-        location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
     <artifact
         location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="4380646509186"
+        timestamp="8682117338818"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="8914682869899"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="9059950989408"
-        verifier="FIELD_TYPE_CHANGE" >
-        <artifact
-            location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
+        timestamp="13079438152553"
+        verifier="CLASS_ADDED" >
         <artifact
             location="/home/zengzehao/AndroidStudioProjects/MessageShare/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
             type="DEX" />
